@@ -171,7 +171,7 @@ TXT 状态下的快捷输入栏左侧按键由**键盘图标**改为了 **⌘ �
 
 先放一张快捷输入时间的表格，如果看不懂的话可以略过它直接使用后面给的**万金油公式**。
 
-![对照表格与示例](https://i.loli.net/2021/05/30/ltXWjhVIevxs38w.jpg)
+![对照表格与示例](https://github.com/Ayaginu-Sue/purewriter/blob/main/Image/time_shortcut.jpg)
 
 附赠几个万金油公式，可以复制后依据自己的需求增删：
 
