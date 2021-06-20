@@ -1,0 +1,9 @@
+{
+  "markdown.extension.toc.levels": "1..6",
+  "markdown.extension.toc.omittedFromToc": {
+    "README.md": ["# 纯纯写作使用手册", "## 目录"]
+  },
+  "markdownlint.config": {
+    "MD025": false
+  }
+}
