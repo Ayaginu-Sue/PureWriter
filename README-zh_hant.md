@@ -462,9 +462,9 @@ Android 的原生 TextView 無法實現文本的兩端對齊，只有 WebView �
 
 在使用 Markdown 時若要獲得預覽效果，可以點擊右下角加號旁的圖標切換預覽狀態。
 
-如果你打算嘗試 Markdown，你可以在這裡獲得來自開發者的簡要介紹：[Markdown簡明教程](https://writer.drakeet.com/markdown)，也可以在本手冊中閱覽[純純寫作 Markdown 使用指南](#純純寫作%20Markdown%20使用指南)。
+如果你打算嘗試 Markdown，你可以在這裡獲得來自開發者的簡要介紹：[Markdown簡明教程](https://writer.drakeet.com/markdown)，也可以在本手冊中閱覽[純純寫作 Markdown 使用指南](#純純寫作-Markdown-使用指南)。
 
-更多關於 Markdown 使用中的問題請參考：[純純寫作 Markdown 使用常見問題](#純純寫作%20Markdown%20使用常見問題)。
+更多關於 Markdown 使用中的問題請參考：[純純寫作 Markdown 使用常見問題](#純純寫作-Markdown-使用常見問題)。
 
 ## Markdown 的快捷輸入頁面
 
@@ -506,7 +506,7 @@ Markdown 的快捷輸入頁面整合了一些常用的 Markdown 符號，Markdow
 
 希望能得到你的理解。
 
-如果你打算嘗試 Markdown，你可以在這裡獲得來自開發者的簡要介紹：[Markdown簡明教程](https://writer.drakeet.com/markdown)，也可以在本教程中閱覽[純純寫作 Markdown 使用手冊](#純純寫作%20Markdown%20使用手冊)。
+如果你打算嘗試 Markdown，你可以在這裡獲得來自開發者的簡要介紹：[Markdown簡明教程](https://writer.drakeet.com/markdown)，也可以在本教程中閱覽[純純寫作 Markdown 使用手冊](#純純寫作-Markdown-使用手冊)。
 
 ## 為什麼打開純純寫作時提示“跳過”或自動創建新文章？
 
@@ -952,7 +952,7 @@ Markdown 的選擇框是由短連接線/減號`-`與方括號`[]`組成的，通
 **注意：**
 
 - 前面標題中井號 `#` 後有空格，而在跳轉鏈接的括號中，井號 `#` 後無空格。
-- 如果有標題中有空格，`#` 中的空格應當刪去。（在某些規範中應被替換為 `%20`）
+- 如果有標題中有空格，`#` 中的空格應當刪去。（在某些規範中應被替換為 `%20` 或 `-`）
 - 目前版本僅能在預覽（預覽&另存為）頁面實現跳轉，在即時預覽中無法實現。
 - 在純純寫作中可能會出現無法跳轉或跳轉到瀏覽器的情況，由於種種原因的限制，目前該問題無法解決。
 
