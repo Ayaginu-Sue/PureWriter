@@ -415,10 +415,10 @@ There are two reasons, most frequent though: Custom font and wrong languages.
 
   **Solution**: Change the language back, or change the app's language according to your text.
 
-## No indentation when writing？
+## No indentation when writing
 
 - Is Markdown mode on? Turn it off as Markdown doesn't support the indentation provided by the app.
-- Is Markdown mode is INDEED OFF, go to settings and be sure the "Indent" option is on.
+- If Markdown mode is INDEED OFF, go to settings and be sure the "Indent" option is on.
 
 ## Cannot save as .txt file, only .md is shown
 
