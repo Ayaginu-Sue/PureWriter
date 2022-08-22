@@ -298,7 +298,7 @@ The menu will disappear after tapping "redo", thus user can clearly see how thei
 
 Redo button is also available in shortcut bar. See relevant paragraphs for more information.
 
-## Restore the content of an article back to an earlier revision through History？
+## Restore the content of an article back to an earlier revision through History
 
 Tap "more" icon on the top bar, then select "History".
 
