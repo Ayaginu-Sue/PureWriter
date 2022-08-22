@@ -141,7 +141,7 @@ When using devices with a larger screen, you can open "Landscape settings & guid
 
 Shortcut keys for shortcut entries: Press and hold the Ctrl or Alt key on the physical keyboard to use the first 10 shortcut entries.
 
-**Turn on landscape mode**：Enable "Auto-rotate screen" (or disable "Orientation Lock"), then rotate your device to enable landscape mode.
+**Turn on landscape mode**: Enable "Auto-rotate screen" (or disable "Orientation Lock"), then rotate your device to enable landscape mode.
 
 Cannot find those two settings? Open the settings app on your phone, and find "Display" or "Display and Brightness", or something alike, and then you'll see "Auto-rotate screen" or "Orientation Lock". You can search the keyword if applicable.
 
@@ -155,7 +155,7 @@ Click `⊕` or `⊕ Text Shortcut` to create your own text shortcuts, or just ad
 
 Click `⌘` (when using Markdown, `M↓`) to open Formatters menu (or Markdown Panel when using Markdown).
 
-Note that when you've selected some texts, and that the shortcut you are going to use has a cursor position inside the shortcut content, the content will be added before and after the selected texts, instead of replacing them, which might be different from other softwares. This is a feature for situations like when you want to add quotes or parentheses before and after certain sentences of paragraphs.
+Note that when you've selected some texts, and that the shortcut you are going to use has a cursor position inside the shortcut content, the content will be added before and after the selected texts, instead of replacing them, which might be different from other softwares. This is a feature for situations like when you want to add quotes or parentheses before and after certain sentences or paragraphs.
 
 To disable shortcut bar, open settings and disable it in Options for the few people.
 
@@ -434,7 +434,7 @@ To turn on Markdown / LaTeX, tap `TXT` icon on the top bar, and make it `M↓`.
 
 To preview, tap the `M↓` button on the left of the `⊕` button.
 
-如果你打算尝试 Markdown，你可以在这里获得来自开发者的简要介绍：[Markdown简明教程](https://writer.drakeet.com/markdown)，也可以在本手册中阅览[纯纯写作 Markdown 使用指南](#pure-writer-markdown-user-guide)。
+Wanna try Markdown? read about the brief introduction written by the developers: [Simple Markdown Guide](https://writer.drakeet.com/markdown), or just read the part [Pure Writer Markdown User Guide](#pure-writer-markdown-user-guide) in this manual.
 
 更多关于 Markdown 使用中的问题请参考：[纯纯写作 Markdown 使用常见问题](#pure-writer-markdown-faq)。
 
