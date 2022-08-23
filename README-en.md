@@ -105,18 +105,15 @@ Please be sure to make use of in-page search. For desktop devices use Ctrl+F, an
   - [Some Markdown syntax are not rendered in the app](#some-markdown-syntax-are-not-rendered-in-the-app)
   - [Why &gt;center&lt; tag isn't supported?](#why-center-tag-isnt-supported)
 - [Pure Writer Desktop Alpha FAQ](#pure-writer-desktop-alpha-faq)
-  - [关于纯纯写作测试版使用体验的重要说明](#关于纯纯写作测试版使用体验的重要说明)
-  - [桌面版在哪里下载？](#桌面版在哪里下载)
-  - [如何连接桌面版？](#如何连接桌面版)
-  - [为什么桌面版打不开？](#为什么桌面版打不开)
-  - [为什么手机与桌面版连接不上？](#为什么手机与桌面版连接不上)
-  - [为什么桌面版与手机的连接经常断开？](#为什么桌面版与手机的连接经常断开)
-  - [为什么开启自动连接后，仍然不能自动连接到桌面版？](#为什么开启自动连接后仍然不能自动连接到桌面版)
-  - [桌面版文字有重影现象如何解决？](#桌面版文字有重影现象如何解决)
-- [纯纯小八卦](#纯纯小八卦)
-  - [为什么昵称开发者 Drakeet 为爪爪？](#为什么昵称开发者-drakeet-为爪爪)
-  - [关于魔法代码](#关于魔法代码)
-  - [纯纯写作的小彩蛋](#纯纯写作的小彩蛋)
+  - [Downloading Pure Writer Desktop](#downloading-pure-writer-desktop)
+  - [Connect to Desktop](#connect-to-desktop)
+  - [Cannot open Pure Writer Desktop](#cannot-open-pure-writer-desktop)
+  - [Cannot connect the Android device to the desktop device](#cannot-connect-the-android-device-to-the-desktop-device)
+  - [Connection between devices is not stable](#connection-between-devices-is-not-stable)
+  - [Auto-connect doesn't work](#auto-connect-doesnt-work)
+  - [Ghosting effect of text in Pure Writer Desktop](#ghosting-effect-of-text-in-pure-writer-desktop)
+- [Easter eggs](#eastereggs)
+  - [Easter eggs in Pure Writer](#easter-eggs-in-pure-writer)
 
 # Pure Writer Q&A
 
@@ -904,77 +901,58 @@ Some variants provide an additional syntax for highlighting texts like `==|==`. 
 
 ## Why &lt;center&gt; tag isn't supported?
 
-Use `<p align="center/left/right">|</p>` instead, as when we are implementing `<center>|</center>`, the app cannot correctly render it.
+Use `<p align="center/left/right">|</p>` instead, as when we were implementing `<center>|</center>`, the app cannot correctly render it.
 
 # Pure Writer Desktop Alpha FAQ
 
-## 关于纯纯写作测试版使用体验的重要说明
+## Downloading Pure Writer Desktop
 
-**⚠️ 纯纯写作的桌面版仍在测试中，目前的使用体验非常初级，只提供了局域网内双向即时同步编辑当前文章的功能，因此请不要对其抱有太高的期望，以免过度失望。如果您打算*仅仅*因为这个桌面版而付费，我强烈建议您重新考虑这件事情。勿谓言之不预。⚠️**
+Pure Writer Desktop is delivered through [our website](http://writer.drakeet.com/desktop), Telegram channel, official QQ group and WeChat group, and Official WeChat account.
 
-## 桌面版在哪里下载？
+Don't trust the versions provided by third parties. We cannot help with content loss or leakage caused by the software downloaded from third party sources.
 
-纯纯写作桌面版会在[纯纯写作桌面版下载](http://writer.drakeet.com/desktop) 、Telegram 频道、官方 QQ 群、微信群和公众号中更新，可以通过相关渠道进行下载。
+## Connect to Desktop
 
-除此之外请不要轻易相信由第三方提供的版本，因使用未知来源的版本造成的档案丢失、内容被泄漏等问题，恕难提供帮助。
+Make sure the phone (the Android device) and the desktop are connected to the same Wi-Fi network or the same hotspot. Click the cloud icon on the top bar of the app on the phone, click "Connect Desktop", then input the IP address to the input field of Pure Writer Desktop. Once they are connected, the current editing article is synced across those two devices.
 
-## 如何连接桌面版？
+- If you see multiple IP addresses, try them line by line.
+- The installation path of Pure Writer Desktop for Windows cannot contain special Unicode characters, like Chinese characters, or it won't be able to use.
 
-保持手机与电脑处于同一个 WIFI 网络或热点下，打开手机版后点击右上角的云图标，点击“连接纯纯写作桌面版”，将显示的 IP 地址输入于桌面版中的输入栏中，即可与桌面版即时连线，双向同步编辑目前文章。
+## Cannot open Pure Writer Desktop
 
-- 若您看到多行 IP 地址，请逐一尝试连线它们。
-- Windows 版存放路径中不能包含中文目录，否则将会无法使用！
+- We only supports 64-bit OSes. Are you using 32-bit OSes?
+- Be sure you are downloading the installation file according to your OS.
+- The installation path of Pure Writer Desktop for Windows cannot contain special Unicode characters, like Chinese characters, or it won't be able to use.
 
-## 为什么桌面版打不开？
+## Cannot connect the Android device to the desktop device
 
-- 纯纯写作桌面版目前仅有 64 位元的版本，请首先检查电脑控制面板中的“系统”确认自己是否是 32 位元作业系统。
-- 请确认安装了你当前所使用系统的对应版本。
-- Windows 版的存放路径不能含有中文目录，请检查你的存放路径是否有中文。
+- Devices should connect to the same Wi-Fi network or hotspot.
+- Check whether your IP address is correct.
+- The firewall may block Pure Writer Desktop from accessing to the network. Allow Pure Writer Desktop to have full access to the network (that is, when using Windows, choose the "Public network" option as well). 
+- AP Isolation may be enabled in your current Wi-Fi network. This is often enabled in public hotspots like those in schools, enterprise or restaurants in order to keep the network safe. Turn on hotspot on your phone or desktop devices, and connect the other device to the hotspot.
 
-## 为什么手机与桌面版连接不上？
+## Connection between devices is not stable
 
-- 请检查你的设备是否在同一网络下。
-- 检查你的 IP 地址是否已经正确输入。
-- 检查电脑的防火墙是否阻止了桌面端纯纯写作连接网络（或公共网络），如果有，请允许纯纯写作连接至网络。
-- 检查你所使用的 WIFI 网络是否打开了 AP 隔离，许多公共场所（如学校、企业、餐饮店等）的 WIFI 网络会打开 AP 隔离，防止用户之间互相连接造成关键资料遗失。此时可以通过手机/电脑开启热点，另一设备连接热点以解决该问题。
+The network connection itself is not stable. Or, Pure Writer on the Android device is stopped by the device itself for it's being "background running". We can't do anything about the network connection itself.
 
-## 为什么桌面版与手机的连接经常断开？
+Currently, many Android devices can stably use this feature. We'll enhance the keep-alive mechanics in later versions. Here is some advice:
 
-此情况一般是由手机息屏后自动清理后台应用或无线网络不稳定造成的，因此很难非常有效地避免此情况的发生。
+- Don't let the Android device automatically stop the app. For example, "Lock" the app in the Recents screen (aka overview screen, recent task list, or recent apps), disable the battery saver for Pure Writer, or simply stop the device from killing any apps running in the background. See also [Don’t kill my app!](https://dontkillmyapp.com/).
+- Make sure those two devices are close to the router or AP, thus enhancing the connectivity stability. If your device supports to connect to Wi-Fi and serve as a Hotspot at the same time, connect the Android device to the Wi-Fi, then connect the desktop to the hotspot provided by the Android device, and make sure they are close to each other.
 
-目前纯纯写作电脑版在相当一部分机型下可以正常连接并使用，将来纯纯写作将尝试进一步加强与电脑端连接状态下的应用保活。以下提供几点可能有助于连接稳定的建议：
+## Auto-connect doesn't work
 
-- 通过各种手段防止纯纯写作应用后台被清理，如：将纯纯写作后台挂锁、将纯纯写作列入耗电限制白名单、关闭息屏后自动清理后台功能 等。可以参考并借鉴 [Don’t kill my app!](https://dontkillmyapp.com/) 中的应对方法。
-- 尽量保证无线信号的强度和连接稳定性，避免因距离路由器距离过远而导致连线不稳定。目前可以采用的解决方式是使用手机连接 WLAN（非必选，但此方式能节省流量且不会增加连线页面的 IP 数量）后开启热点，然后使用电脑连接热点，使二者保持较近距离。
+Your phone's IP address may change after switching from networks to networks. Thus you'll have to write the IP address again in Pure Writer Desktop.
 
-## 为什么开启自动连接后，仍然不能自动连接到桌面版？
+You can try to adjust your Wi-Fi settings of your phone. Click on one of the Wi-Fi connections, then change "IP settings" (or anything alike) to "Static" (or anything alike). In this case, the IP address will not change when connecting to that specific Wi-Fi network.
 
-当你数次切换网络后，手机的 IP 地址可能会发生变化，导致不能自动连接到桌面版。
+## Ghosting effect of text in Pure Writer Desktop
 
-此时可以在手机的 WLAN 设置中选择 【静态 IP 地址】，这样当在此 WLAN 下使用时，将不再会无法自动连接桌面版。
+Try adjust the Refresh Rate setting to "Fixed" (or things alike) in NVIDIA Control Panel (or things alike).
 
-## 桌面版文字有重影现象如何解决？
+# Easter eggs
 
-可以尝试修改 Nvidia 控制面板的刷新率设置为固定刷新率以解决该问题。
-
-# 纯纯小八卦
-
-## 为什么昵称开发者 Drakeet 为爪爪？
-
-因为 Drakeet 的前三个字母 dra 的读音是爪，取叠音就为爪爪(DraDra)。
-
-## 关于魔法代码
-
-在纯纯写作的时光机中存在一些隐藏的魔法代码，在时光机中输入魔法代码的话，可能会产生一些有趣的效果。
-
-## 纯纯写作的小彩蛋
-
-目前已证实存在的彩蛋有两个。
-
-- 在会员页面进行一定次数的某些重复操作后，可以见到纯纯写作曾经设计过但最终放弃的一个图标和一个弹窗彩蛋。
+## Easter eggs in Pure Writer
+On the Pure Writer Pro page, repeat an action (I'm not going to tell you that you are going to click something) for several times, and you are going to see the previously abandoned icon design of the app, and also a pop-up.
   
-  这个彩蛋的图标如今也被应用于纯纯写作在安卓 12 的启动动画中。
-  
-- 在纯纯写作中，使用默认的霞鹜文楷字体，复制或输入 （U+E003）即可见到这个彩蛋。
-  
-  该字符在当前页面中可能无法正常显示，将它复制到纯纯写作中后套用霞鹜文楷即可正常显示。
+The previously abandoned design is now used in the splash screen when using Android 12 and above.
