@@ -77,33 +77,33 @@ Please be sure to make use of in-page search. For desktop devices use Ctrl+F, an
   - [Cannot find backup files in Google Drive](#cannot-find-backup-files-in-google-drive)
   - [Can I use [insert cloud drive provider name] for Cloud Backup?](#can-i-use-insert-cloud-drive-provider-name-for-cloud-backup)
   - [Cannot turn off automatic backup](#cannot-turn-off-automatic-backup)
-- [纯纯写作 Markdown 使用指南](#pure-writer-markdown-user-guide)
-  - [何谓 Markdown？](#何谓-markdown)
-    - [注意事项](#注意事项)
-  - [正文部分](#正文部分)
-    - [标题](#标题)
-    - [加粗/斜体/粗斜体](#加粗斜体粗斜体)
-    - [删除线/下划线](#删除线下划线)
-    - [有序列表](#有序列表)
-    - [无序列表](#无序列表)
-    - [引用](#引用)
-    - [脚注](#脚注)
-    - [角标](#角标)
-    - [文字居左/居中/居右](#文字居左居中居右)
-    - [插入图片](#插入图片)
-    - [插入链接](#插入链接)
-    - [插入表格](#插入表格)
-    - [选择框](#选择框)
-    - [页内快速跳转](#页内快速跳转)
-    - [分割线](#分割线)
-    - [改变字符颜色](#改变字符颜色)
-    - [输入标记字符](#输入标记字符)
-    - [关于其他 HTML 代码](#关于其他-html-代码)
-    - [代码块](#代码块)
-- [纯纯写作 Markdown 使用常见问题](#pure-writer-markdown-faq)
-  - [关于纯纯写作 Markdown 的使用规范与兼容性测试](#关于纯纯写作-markdown-的使用规范与兼容性测试)
-  - [Markdown 中文本高亮或其他部分代码为何无法使用？](#markdown-中文本高亮或其他部分代码为何无法使用)
-  - [Markdown 的居中为何无法使用 center 代码？](#markdown-的居中为何无法使用-center-代码)
+- [Pure Writer Markdown User Guide](#pure-writer-markdown-user-guide)
+  - [What's Markdown?](#whats-markdown)
+    - [Note](#note)
+  - [Guide](#guide)
+    - [Headings](#Headings)
+    - [Bold & Italic](#bold-italic)
+    - [Underlines & Strikethroughs](#underlines-strikethroughs)
+    - [Ordered List](#ordered-list)
+    - [Unordered List](#unordered-list)
+    - [Quote](#quote)
+    - [Footnote](#footnote)
+    - [Superscript & Subscript](#superscript-subscript)
+    - [Text alignment](#text-alignment)
+    - [Insert images](#insert-images)
+    - [Insert links](#insert-links)
+    - [Insert Tables](#insert-tables)
+    - [Checkbox](#checkbox)
+    - [In-page links](#in-page-links)
+    - [Horizontal rules](#horizontal-rules)
+    - [Text color](#text-color)
+    - [Escape characters](#escape-characters)
+    - [Other HTML tags and syntax](#other-html-tags-and-syntax)
+    - [Code blocks](#code-blocks)
+- [Pure Writer Markdown FAQ](#pure-writer-markdown-faq)
+  - [About Markdown standards in this app](#about-markdown-standards-in-this-app)
+  - [Some Markdown syntax are not rendered in the app](#some-markdown-syntax-are-not-rendered-in-the-app)
+  - [Why &gt;center&lt; tag isn't supported?](#why-center-tag-isnt-supported)
 - [Pure Writer Desktop Alpha FAQ](#pure-writer-desktop-alpha-faq)
   - [关于纯纯写作测试版使用体验的重要说明](#关于纯纯写作测试版使用体验的重要说明)
   - [桌面版在哪里下载？](#桌面版在哪里下载)
@@ -621,205 +621,203 @@ In theory, any cloud drive providers that supports WebDAV are supported. You can
 
 Local automatic backups cannot be turned off, otherwise Pure Writer will not be able to keep your articles safe. The app will not eat up all your storage though, as it only keeps the latest 25 automatic backup files. Any automatic backup files older than those are automatically cleaned. The backups you make by manually clicking "Back up to local storage now" in Pure Writer are not included however; they will be stored in your device permanently unless you delete them yourself.
 
-# 纯纯写作 Markdown 使用指南
+# Pure Writer Markdown User Guide
 
-## 何谓 Markdown？
+## What's Markdown?
 
-Markdown 是一种用纯文本表达富文本内容的标记语言。它简单易学，纯纯写作支持 Markdown(MD)，您可以点击顶栏右侧的`TXT`将其切换为`M↓`以启用 Markdown。
+Markdown is a mark*up* language for creating formatted text using a plain-text editor, easy to learn. Pure Writer supports Markdown (MD), by clicking on the `TXT` icon on the top bar, you can enable Markdown mode (icon shown as `M↓`).
 
-纯纯写作提供了 Markdown 快捷输入面板，你可以点击快捷输入栏左侧的`M↓`图标使用它们。
+The app also provides Markdown Panel, click the `M↓` icon on shortcut bar to open it.
 
-### 注意事项
+### Note
 
-1. **空格**在 Markdown 中是重要的组成成分，不可缺失。
+1. **Spaces** are an important part of Markdown. Be careful of spaces.
 
-2. Markdown 所使用的标记多为**半角**，请勿与全角混淆。
+2. Markdown syntax uses **half-width** characters. If you use a language that often uses full-width characters (e.g. Japanese), be sure to use the half-width ones.
 
-3. Markdown 下默认**无法使用缩进**，有需要缩进的段落请手动插入缩进。
+3. Indent settings are **not available** when Markdown mode is on by default. Manually insert the indent if needed.
 
-4. Markdown 并无完全统一的规范，纯纯写作遵循并实现了 CommonMark 的 Markdown 标准，某些第三方的 Markdown 在纯纯写作中**可能无法使用**（如`==高亮文本==`）。
+4. Markdown has variants. Pure Writer follows and implements the standard of CommonMark. Thus syntax in some variants (like `==highlight text==`) **are not supported**.
 
-5. 标题、列表、引用文本、表格、选择框、分割线等部件**无法在行内使用**，必须在**行首**才可以使用并渲染。
+5. Syntax like title, list, quote, table, checkbox, horizontal rule are not meant to be used **inline**, that is, you should always use them **at the beginning of the line** for them to be correctly rendered.
 
-6. 一个你不一定发现的纯纯写作小知识：选中一些文本后，使用纯纯写作内部的快捷输入项或快捷 Markdown 标记，当快捷输入的内容光标位置在插入项中的时候（如插入括号并设定插入后光标在括号中），将会直接插入在选中文字的前后，而非替换掉这段文字。
+6. Pay attention to the cursor's position of a text shortcut. Some of the shortcut entries provided by Pure Writer support to surround the syntax around (before and after) the selected text. Wanna surround the text with your own text shortcut? Put the cursor in the place you want the actual text to be inserted in the content of the Shortcut content field.
 
-7. 默认情况下 Markdown 规定，两段之间必须**空一行**或者在**段尾部空两格**，才能真正在渲染时换行，比如：
+7. By CommonMark, there should be **one line break between two lines**, or **two spaces at the end of a line** to render a line break. For example:
 
    ```md
-   第一行
+   Paragraph 1
    
-   第二行
+   Paragraph 2
    ```
 
-   如果在纯纯写作设置页面开启 `GFM Line Breaks` 则只需要一个换行即可获得渲染时换行。因为`GFM Line Breaks`是默认打开的，因此本教程默认是依据打开 `GFM Line Breaks` 开关书写的。
+   Enabling `GFM Line Breaks` in the app's settings can remove the above limit, thus no line break between two lines will also render a line break. This is enabled by default btw, and the guide will assume that `GFM Line Breaks` is enabled.
 
-8. 在本指南中，除表格部份外，均使用竖形制表符`|`代指光标落点。
+8. `|` represent the cursor in this guide, with an exception of the Table section of the guide.
 
-## 正文部分
+## Guide
 
-### 标题
+### Headings
 
-Markdown 的标题是用井号`#`加空格来表示的，而`#`的多少就代表着标题的层级，从少到多一共有六个层级。
-
-标题的文字内容填充在空格后面。举例如：
+In Markdown, headings are `#` + ` ` (a space) + heading content. You can multiple the `#` (up to 6 `#` symbols) to represent six levels of section headings. The more `#` there are, the smaller the heading will be. For example:
 
 ```md
-# 一级标题
+# Heading level 1
 
-## 二级标题
+## Heading level 2
 
-### 三级标题
+### Heading level 3
 
-#### 四级标题
+#### Heading level 4
 
-##### 五级标题
+##### Heading level 5
 
-###### 六级标题
+###### Heading level 6
 ```
 
-标题实际上应该在前后都插入相同数量的井号`#`（如：`## 二级标题 ##`），纯纯写作中无需这样做。
+You can also "close" a heading by adding same amount of `#` after the heading, e.g. `## Heading level 2 ##`, which is not required in the app.
 
-另一种标题样式是由至少三个等于号`=`组成一级标题或至少三个短连接线/减号`-`组成二级标题，此样式应当插入在对应标题文本下方的一行。
-
-需要注意的是，在文本与短连接线之间不可以有空行，否则会被识别为分割线。
-
-### 加粗/斜体/粗斜体
-
-这三个东西放在一起说，主要是因为它们所主要使用的标记符号是一样的，都是星号`*`或者下划线`_`，区别只在于符号的多少。
-
-斜体是由前一后一两个星号或下划线组成的：`*斜体文本*`、`_斜体文本_`
-
-加粗通常是由前二后二四个星号或下划线组成的：`**加粗文本**`、`__加粗文本__`
-
-而粗斜体以此类推，是由前三后三六个星号或下划线组成的：`***粗斜体文本***`、`___粗斜体___`
-
-纯纯写作中未提供下划线式的快捷输入项，因此建议使用星号来加粗或斜体。
-
-### 删除线/下划线
-
-删除线与下划线都是文字加线，就放在一起说了。
-
-删除线是由前二后二四个波浪线组成的：`~~删除线文本~~`
-
-而在 Markdown 中是无法直接插入下划线的，因此就需要使用行内的 HTML 标记`<u>|</u>`来插入下划线。
-
-将文字插入在`<u>|</u>`标记中即可实现下划线的效果，示例：`<u>下划线文本</u>`
-
-### 有序列表
-
-有序列表的标记方式较为简单，数字加句点加空格即可：`1. 第一点`
-
-换行即可自动补全下一行的序号。
-
-### 无序列表
-
-无序列表有三种可以使用的方式，纯纯写作提供了其中常见的两种并对其提供了自动填充。
-
-第一种是短连接线/减号`-`加空格：`- 减号列表`
-
-第二种是星号`*`加空格：`* 星号列表`
-
-除此之外，纯纯写作未提供快捷输入但是支持渲染的标记方式是加号`+`加空格：`+ 加号列表`
-
-三者在实际使用上并没有什么区别。
-
-值得注意的一点是，当在渲染连续的无序列表时，由同种标记组成的列表会距离较近，而不同标记组成的列表会距离较远，这一点在某些情况下会很实用。
-
-有序列表和无序列表是可以互相嵌套的，可以通过在列表前加入至少两个空格来完成列表的嵌套。
-
-### 引用
-
-当需要引用一段话的时候，不妨试试引用标记，它是由大于号`>`加空格组成的：`> 被引用文本`
-
-### 脚注
-
-在需要添加脚注的文字后加上脚注名：`[^脚注名]`。 然后在文本的任意位置空一行(一般在最后)添加脚注：`[^脚注名]:脚注内容`，即可插入脚注。
-
-注意：在脚注的冒号`:`后不应加入空格。
-
-纯纯写作的脚注无法以小窗口打开，而是会直接跳转至浏览器，因此该功能目前实用性较差。
-
-### 角标
-
-Markdown 并未原生支持上下角标，但是在纯纯写作中可以通过 HTML 代码来实现这样的效果。
-
-上角标的代码为：`<sup>|</sup>`；下角标的代码为：`<sub>|</sub>`。
-
-举例：`引文<sup>[1]</sup>`、`C<sub>2</sub>H<sub>5</sub>OH`。
-
-### 文字居左/居中/居右
-
-Markdown 无法直接实现文字居中，因此使用了 HTML 代码`<p align="">|</p>`，纯纯写作默认提供的是`<p align="center">|</p>`居中，但是通过修改相应的位置代码就可以做到左中右都支持，左中右分别是 left, center, right。
-
-文字位置的格式是：`<p align="位置">需要修改位置的文字</p>`
-
-纯纯写作**无法使用**`<center>|<\center>`代码居中。
-
-### 插入图片
-
-插入图片是一个相对重要的功能，它的格式是：`![]()`。
-
-前面的方括号填写的是图片名称，而后面括号填写的是图片位置。当你使用网络图片时应该填写它的网络位置，当你使用本地图片时应该用图片选择器选中或填写它的本地位置。
-
-需要注意的是，在使用网络图床时，要注意保护个人隐私，选择值得信任的图床；在使用本地图片时，该图片不可以被移动或删除，否则将无法正常显示，同时该图片也无法随着 Markdown 文档一同分享与同步。
-
-### 插入链接
-
-与插入图片类似，其格式为：`[]()`。
-
-在前面的方括号中输入链接描述，在后面的圆括号中输入链接即可，如：`[POPO 原創市集](https://www.popo.tw/index.html)`
-
-### 插入表格
-
-纯纯写作提供了快捷插入三列四行表格的快捷输入项。
-
-在 Markdown 下的表格并没有 excel 那样非常多的格式，只有简单的几列几行的表格。
-
-表格的基本构成部件是竖形制表符`|`、空格、冒号`:`和短连接线/减号`-`四个部件，制表符分隔表格的每一栏，空格确定表格内的文本内容，冒号确定表格中文本的位置，短连接线则负责标记表头与辅助确定表格中文本的位置。
-
-实例：
+Alternatively, you can make heading like this:
 
 ```md
-| 左对齐 |  居中  | 右对齐 |
-| :----- | :----: | -----: |
-| left   | center |  right |
-| left   | center |  right |
-| left   | center |  right |
+Heading
+=======
+
+Sub-heading
+-----------
 ```
 
-其实际显示效果为：
+This only provides two levels of heading, and there should be more than 3 `=` or `-` for the app to recognize them as a heading. There shouldn't be any line breaks between the heading content and the `=` or `-` lines, otherwise they become normal text + horizontal rules.
 
-| 左对齐 |  居中  | 右对齐 |
-| :----- | :----: | -----: |
-| left   | center |  right |
-| left   | center |  right |
-| left   | center |  right |
+### Bold & Italic
 
-需要注意的地方：
+To make bold text or italic text, you will use `*` or `_` around the text.
 
-1. 插入表格时，表格的上一行必须为空行，否则表格不会被成功渲染。
+Italic text uses one `*` or `_` around the text: `*Italic*` or `_Italic_`.
 
-2. `:---`代表内容和标题栏左对齐、`:--:`代表内容和标题栏居中、`---:`代表内容和标题栏右对齐。
+For bold, then two: `**Boldface**` or `__Boldface__`.
 
-3. `|`与`-`之间的多余空格会被忽略，不影响布局。
+For bold and italic at the same time, then three: `***Boldface and Italic***` or `___Boldface and Italic___`.
 
-4. 内容和`|`之间的多余空格会被忽略，因此为了美观可以使用空格来对齐不同行的单元格，表头处`-`的数量至少要有一个。
+The Markdown Panel provides this syntax, but only the `*` one. Using `*` is preferred.
 
-5. 每行第一个`|`和最后一个`|`可以省略，因此在输入表格后的内容时应该多空一行，以防止下一行被认为是表格中的内容。
+### Underlines & Strikethroughs
 
-### 选择框
+To represent a range of text that has been deleted from a document, use two `~` around the text: `~~Deleted text~~`. The text will be striked through.
 
-Markdown 的选择框是由短连接线/减号`-`与方括号`[]`组成的，通过在方括号中输入空格或字母 `x` 来确定是否选中该选择框。选择框的顺序是短连接线、空格、前方括号、空格或字母 `x`、后方括号、空格加需要选择的文本，这些内容缺一不可，纯纯写作的 Markdown 快捷输入项中已经提供了相应选择框的快捷输入方式，可以有效避免输入错误。
+Umm, underlines have to be inserted by using HTML tags. Use the tag `<u>|</u>` (`|` represents the cursor) inline to insert a range of text with underline. For exmaple: `<u>Text with underline</u>`.
 
-举例：`- [ ] 未选中`、`- [x] 选中`
+### Ordered List
 
-### 页内快速跳转
+Ordered list is simple, just add a number, a dot and a space at the beginning of the line: `1. Firstly`.
 
-页内的快速跳转需要有标题（h1~h6）支持。
+The app will add `2.` and so on when pressing Enter.
 
-插入到某个标题的跳转链接，即可在预览页面实现页内跳转。
+### Unordered List
 
-其格式为：
+For unordered list, add `-`, `*` or `+` and a space at the beginning of the line. In Markdown Panel, we provide the shortcut and autocompletion of the first two.
+
+The `-` one: `- Unordered list started with a dash`
+
+The `*` one: `* Unordered list started with an asterisk`
+
+The `+` one: `+ Unordered list started with a plus sign`
+
+Note that when rendering unordered lists, list items with the same symbol are more close to each other, and those with different symbols are more separate from each other.
+
+Ordered and unordered lists can be nested with each other, and the nesting can be done by adding at least two spaces in front of the list items.
+
+### Quote
+
+When you want to quote a sentence, use `>` + ` ` (a space) + the sentence, e.g. `> Markdown uses email-style characters for blockquoting.`.
+
+### Footnote
+
+Want to add a footnote after a sentence? Add `[^Footnote name]`, and then, write the footnote content anywhere in the text as a seperate line in the following format: `[^Footnote name]:Footnote content`. Do not add a space after the `:` in the app.
+
+Currently you cannot open a footnote as a pop-up, unlike other websites or software. Instead they are considered as links and therefore simply launches the browser, which kinda downgrades the experience. We are sorry for the inconvenience.
+
+### Superscript & Subscript
+
+Again, you'll have to use HTML tags.
+
+Superscript: `<sup>|</sup>`; and Subscript: `<sub>|</sub>`。
+
+For example: `x<sup>2</sup>+x+1` and `C<sub>2</sub>H<sub>5</sub>OH`.
+
+### Text alignment
+
+Again, HTML tags and attributes, this case `<p align="">|</p>`. In Markdown Panel we provide `<p align="center">|</p>`, but you can change `center` to left, center, right.
+
+For example: `<p align="[insert alignment you want]">Text</p>`.
+
+**Do not use**`<center>|</center>` tag.
+
+### Insert images
+
+Inserting images is a relatively important feature for some of you, with a format of `![]()`.
+
+In the brackets, write the name of the image, and in the parentheses, write the URL / path of the image. Write URL for images from the Web. Select a local image from the file picker when using the shortcut in the Markdown Panel, or write the local path to the local image.
+
+When using online image services (like Imgur), you should pay attention to protect your privacy and choose a trustworthy service. When using local images, they cannot be moved or deleted, otherwise they won't show correctly, and local images aren't backed up with the article.
+
+### Insert links
+
+It's a bit like inserting images, but you remove the `!`: `[]()`.
+
+Write the link's text in the brackets, and write URL in the parentheses, for example: `[Pure Writer](https://writer.drakeet.com)`.
+
+### Insert Tables
+
+In Markdown Panel, we provide a shortcut to insert a table with 3 columns and 4 rows.
+
+It's not Microsoft Excel, you don't get these fancy features, but only simple rows and columns.
+
+Tables consist of 4 symbols: `|`, ` ` (spaces), `:` and `-`. `|` determines columns, spaces are for actual table content, `:` determines alignment of the table header and cells, `-` marks table headers.
+
+For example: 
+
+```md
+| Alignment left | Alignment center | Alignment right |
+| :------------- | :--------------: | --------------: |
+| left           |      center      |           right |
+| left           |      center      |           right |
+| left           |      center      |           right |
+```
+
+Result:
+
+| Alignment left | Alignment center | Alignment right |
+| :------------- | :--------------: | --------------: |
+| left           |      center      |           right |
+| left           |      center      |           right |
+| left           |      center      |           right |
+
+Notes:
+
+1. When inserting a table, insert a line break above the table, or the table will not be rendered correctly.
+
+2. `:---` to align the cells and table header of the column to left. `:--:` for center and `---:` for right.
+
+3. Spaces between `|` and `-` are ignored when rendering.
+
+4. Spaces between cells' content and `|` are ignored when rendering. You can use spaces to make the table more pretty when not previewing. There must be at least one `-` for the table header.
+
+5. `|` at the beginning and the end of a line can be omitted. Thus you should insert a line break below the table as well, in case that the next line that is supposed not to be in the table, is rendered in the table.
+
+### Checkbox
+
+Checkboxes consists of `-` + ` ` (a space) + `[]` + ` ` (a space) + content. By adding a space in the brackets, the checkbox will be shown as unchecked. By adding an `x` in the brackets, the checkbox will be shown as checked. We've provided the corresponding shortcut in Markdown Panel; make sure to use it if it doesn't work properly.
+
+For exmaple: `- [ ] Unchecked`, `- [x] Checked`.
+
+### In-page links
+
+In-page links, or anchors, point to the headings in the article.
+
+You can navigate by using these links when previewing.
+
+For example:
 
 ```md
 # title1
@@ -829,46 +827,46 @@ Markdown 的选择框是由短连接线/减号`-`与方括号`[]`组成的，通
 [Back to title 1](#title1)
 ```
 
-此时在即时预览页面 Back to title 1 会显示为蓝色，点击它即可跳转至对应位置。
+When previewing, the link will turn blue, and by clicking the link, it navigates to the corresponding heading.
 
-**注意：**
+**Note:**
 
-- 前面标题中井号 `#` 后有空格，而在跳转链接的括号中，井号 `#` 后无空格。
-- 如果有标题中有空格，`#` 中的空格应当删去。（在某些规范中应被替换为 `%20` 或 `-`）
-- 目前版本仅能在预览（预览&另存为）页面实现跳转，在即时预览中无法实现。
-- 在纯纯写作中可能会出现无法跳转或跳转到浏览器的情况，由于种种原因的限制，目前该问题无法解决。
+- Headings are `#` + ` ` (a space) + content, but do not add a space in the links.
+- Remove the spaces in the link even when there are spaces in the title. (in other softwares or Markdown variants however, they may replace the spaces to `%20` or `-`)
+- You can only use these anchors via the option "Preview & Export". Currently these links are not usable in Quick Preview.
+- You may experience problems when using these links. They may do nothing at all, or they launch the browser. We can do nothing about it currently, and sorry for the inconvenience.
 
-### 分割线
+### Horizontal rules
 
-分割线是由至少三个的短连接线/减号`-`构成的，占单独一行。
+Horizontal rules consist of at least 3 dashes `-` in a single line.
 
-需要注意的是，在文本与其下方的分割线之间应该加入一个空行，否则分割线上的文本会被识别为标题。
+Remember the headings? If you want to add a horizontal rule below a line of text, insert a line break between them.
 
-### 改变字符颜色
+### Text color
 
-纯纯写作可以通过 HTML 的`<font color="|">|</font>`来改变字符的颜色，格式为`<font color="颜色色号或常见颜色的英语单词">需要改变颜色的文本</font>`。
+HTML tags again, in this case `<font color="|">|</font>`. Format is `<font color="[RGB HEX value or common color names]">Text</font>`.
 
-举例：`<font color="black">黑色文字</font>`、`<font color="#000000">黑色文字</font>`
+For exmaple: `<font color="black">These are black!</font>`, `<font color="#000000">These are black too.</font>`.
 
-注意：改变字体颜色与字符居中暂时**无法嵌套**；改变字体颜色在许多地方可能造成冲突而**无法显示**（如表格），**请谨慎使用**。
+You **cannot** text color tag and text alignment tag at the same time. Text color **may not** be changed in this way when you use it in places like tables. **Use it with caution**.
 
-### 输入标记字符
+### Escape characters
 
-如果你需要输入标记字符的本体，那你就需要看一下这一条了，Markdown 通过反斜线`\`来输入标记字符。
+Let's say, you want to insert an asterisk at the beginning of the line, but not want the line to become an unordered list, you add a backslash `\` before the asterisk. Markdown uses `\` for *escaping* charcters. That is, the symbols used by some syntax become themselves when rendering.
 
-举例说明：`\*斜体\*`在 Markdown 中将会被渲染为`*斜体*`。
+For example, `\*Italic\*` in Markdown will be rendered as `*Italic*`。
 
-### 关于其他 HTML 代码
+### Other HTML tags and syntax
 
-在 Markdown 中可以使用相当一部分 HTML 代码，而纯纯写作也对其做了一定的支持。如之前介绍的下划线`<u>|</u>`（`<ins>|</ins>`）、上下角标`<sup>|</sup>`、`<sub>|</sub>`等。
+You can use HTML tags in Markdown. While in the app, we support some of them, like underline (`<u>|</u>` or `<ins>|</ins>`), superscript & subscript (`<sup>|</sup>` & `<sub>|</sub>`) and so on.
 
-需要注意的是，纯纯写作的 Markdown 编辑器并非真正的 HTML 编辑器，因此并非所有 HTML 代码都能在纯纯写作的 Markdown 模式下使用并得到渲染。有相关需求的用户可以自行实验纯纯写作是否对其进行了支持。
+However, Pure Writer isn't HTML editor, thus we don't support all HTML syntax in the app. Test it out if you want to use some HTML syntax not listed in the guide.
 
-### 代码块
+### Code blocks
 
-Markdown 中可以通过使用` ```|``` `来包含多行代码，使用`` `|` ``来包含行内代码。
+In Markdown, use ` ```|``` ` for inserting several lines of code, and use `` `|` `` to insert inline code.
 
-纯纯写作支持代码高亮，在开头的` ``` `后输入语言名字即可。
+We support syntax highlighting in code blocks, just specify the language after ` ``` `.
 
 举例：
 
@@ -890,23 +888,23 @@ def myfun(x):
 ​```
 ````
 
-更多更全的 Markdown 使用指南可以参考[Markdown 编辑器语法指南](https://segmentfault.com/markdown)
+See also [Markdown Editor Syntax Guide (Chinese)](https://segmentfault.com/markdown).
 
-# 纯纯写作 Markdown 使用常见问题
+# Pure Writer Markdown FAQ
 
-## 关于纯纯写作 Markdown 的使用规范与兼容性测试
+## About Markdown standards in this app
 
-纯纯写作的 Markdown 遵循 CommonMark 的规范，参考链接：[CommonMark Spec](https://spec.commonmark.org/0.29/)
+We follow CommonMark, see more on [CommonMark Spec](https://spec.commonmark.org/0.29/).
 
-关于纯纯写作中的 Markdown 可以使用 CommonMark 提供的官方测试器进行测试：[CommonMark 规范测试器](https://spec.commonmark.org/dingus/)
+For what syntax can be used in this app, try it out on this website by CommonMark: [commonmark.js dingus](https://spec.commonmark.org/dingus/)
 
-## Markdown 中文本高亮或其他部分代码为何无法使用？
+## Some Markdown syntax are not rendered in the app
 
-文本高亮的常见代码`==|==`并非 Markdown 原生的代码，而是其他第三方应用加入的代码，纯纯写作不支持这些非原生的代码。如果有需要可以尝试使用行内代码块（其代码为：`` `行内代码块` ``，纯纯写作中提供了快捷输入）代替，需要注意的是，行内代码块里不会渲染加粗、斜体、删除线、下划线等代码。
+Some variants provide an additional syntax for highlighting texts like `==|==`. This isn't in CommonMark, and we don't support them. You can try inline code blocks for a similar appereance (`` `Inline code blocks` ``, you can insert this via Markdown Panel), but again these are "code blocks", thus bold, italic, strikethrough, underline etc. will not be rendered in it.
 
-## Markdown 的居中为何无法使用 center 代码？
+## Why &lt;center&gt; tag isn't supported?
 
-纯纯写作的居中与左右对齐只能使用 `<p align="center/left/right">|</p>` 代码来完成。因为 `<center>|</center>` 代码会出现无法正确渲染换行等 bug，所以纯纯写作取消了对此代码的支持。
+Use `<p align="center/left/right">|</p>` instead, as when we are implementing `<center>|</center>`, the app cannot correctly render it.
 
 # Pure Writer Desktop Alpha FAQ
 
