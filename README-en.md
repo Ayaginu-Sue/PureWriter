@@ -436,101 +436,103 @@ To preview, tap the `M↓` button on the left of the `⊕` button.
 
 Wanna try Markdown? read about the brief introduction written by the developers: [Simple Markdown Guide](https://writer.drakeet.com/markdown), or just read the part [Pure Writer Markdown User Guide](#pure-writer-markdown-user-guide) in this manual.
 
-更多关于 Markdown 使用中的问题请参考：[纯纯写作 Markdown 使用常见问题](#pure-writer-markdown-faq)。
+See also [Pure Writer Markdown FAQ](#pure-writer-markdown-faq).
 
 ## Markdown Panel
 
-Markdown Panel整合了一些常用的 Markdown 符号，Markdown 写作者可以使用它更方便地输入 Markdown 符号。
+Markdown Panel integrates some commonly used Markdown syntax, making it more convenient to insert Markdown syntax.
 
-在 Markdown 模式下点击快捷输入列最左端的`M↓`图标即可打开 Markdown 快捷输入页面；而非 Markdown 模式下需要打开格式化选项后向左移动到 Markdown 快捷输入页面。
+When Markdown mode is on, tap the `M↓` icon on the left of the shortcut bar to open Markdown Panel; When off, tap `⌘` then swipe left.
 
-在此处，你可以快捷输入部分 Markdown 标签，如加粗、斜体、插入图片等，不过此页面的东西**不支持修改**。
+The panel includes several Markdown syntax, like bold, italic, insert image and so on, but you **cannot customize entries in Markdown Panel**.
 
 ## Is it possible to render Markdown in real time in this app?
 
-纯纯写作曾经尝试过支持 Markdown 实时渲染，但是测试后发现，现今移动设备的性能尚不能满足预期，因此，在移动设备的性能达标之前，纯纯写作将不会提供这个功能。
+Currently, most of the devices cannot handle real-time rendering while keeping a decent performance. So, not now.
 
 ## It takes too much time to open the app
 
-出现此情况一般是因为在纯纯写作中打开了过长的文章。由于手机的性能有限，所以打开很长的文章时会有一定的等待时间。
+Basically, it's because your articles are too long, and thus it takes more time for the app to open it.
 
-纯纯写作是编辑器，而非阅读器，请尽量避免使用纯纯写作打开过长的文章。如果发现因过长的文章导致启动缓慢，请彻底删除外部导入的超大文章。
+Pure Writer is an editor app, not a reader app. It's a bad idea to import oversized articles, or never make use of chapter. Seperate them into several small parts, or just delete them in the app.
 
 ## App freezes when switching to Trash or other books
 
-**如果此条目未能解决该问题，请向开发者（邮箱：drakeet@drakeet.com）写邮件反馈。**
+**Problem not solved after reading this paragraph? Send an email about your issue to the developer. (drakeet@drakeet.com)**
 
-这一般是由于废纸篓中储存的文章过多，超出了手机的运算能力引起的。此时纯纯写作**并没有卡顿**，而是在加载废纸篓中的文章，因此应用无法做出任何应答，会让人误以为应用卡死，请稍作等待至全部文章加载完成，打开后请尽量删除或清空废纸篓中的内容，以避免再次卡顿。
+There are too many articles in the Trash book, and thus your phone cannot handle it without lagging. Technically the app **ISN'T FREEZING**, but rather is actively loading articles, during which the app seems to be not responding. Wait until all articles are loaded, then delete all articles in the Trash book.
 
-**请注意，此时切勿退出应用，否则可能导致下次打开应用时闪退。**
-发生闪退的解决方法：
+**Note that you shouldn't close the app when it's loading articles, or the app may crash at the next startup.**
+Solution when app crashes at startup:
 
-1. 确保有做过备份，如未进行云备份则在本地备份文件夹 `Documents/PureWriter/backups/Auto` 或自己设定的备份文件夹中复制并保留未打开废纸篓时的备份包（非最新备份包，建议多保存几个，以备不时之需）。
-2. 卸载纯纯写作并重新安装。
-3. 通过本地或云端保留的备份包恢复发生闪退前的备份。
-4. 此时即可重新进入废纸篓页面并等待其页面开启。
+1. Backup. If you've set Cloud Backup, then fine, but if not, check `Documents/PureWriter/backups/Auto` or other path you selected for the app. Copy the backups created when you didn't open the Trash book to other places. In this case, the desired backup is probably not the latest, and thus it is recommended to copy more than one backup, just in case.
+2. Uninstall Pure Writer, then install the app again.
+3. Restore backup. Connect to your Cloud Backup, or copy the local backups back, then restore to the backup created when you didn't open the Trash book.
+4. Open the Trash book. Wait patiently, until all articles are loaded, then delete all articles in the Trash book.
 
-**此情况也可能发生于切换到其他书籍或超长文章时，多发生在「打开不常打开却经常向其中移动内容的书籍」或「由高配手机切换到低配手机、且用户有非常巨大的文章」时。**
+**The app may also "freeze" while opening other books or large articles. You may experience it if you open books that you don't open often but frequently move chapters to them, or you switch to a low-end device while having oversized articles.**
 
 ## Is it possible to insert bold text or images in articles?
 
-纯纯写作是一个纯文本编辑器，它致力于提供优秀的纯文本写作体验和辅助。图片属于富文本内容，无法在纯文本中直接表达，但可以使用 Markdown 用纯文本来描述富文本内容，纯纯写作支持 Markdown。
+Pure Writer is an editor designed for plain text, while images or text with styles are so-called rich text, thus you cannot just insert an image like Microsoft Word. However, Pure Writer supports Markdown, thus you can use Markdown syntax to "insert" images, or "insert" bold texts, but to actually see them you'll have to preview the Markdown rendering result.
 
-而且如果支持富文本或图片，则会使得编辑器的复杂度大幅上升，复杂就意味着容易出错且难以做到完美，专注才能做到极致。
+Coding an editor app to support rich text directly requires a lot more work, and will make the complexity of the editor rises significantly. More complexity means more bugs, less perfect.
 
-所以很抱歉，纯纯写作从一开始就没有计划支持富文本，以后也不会计划做相关支持。
+So, Pure Writer has never thought of supporting rich text directly, and will not plan to do so in the future.
 
-希望能得到你的理解。
-
-如果你打算尝试 Markdown，你可以在这里获得来自开发者的简要介绍：[Markdown简明教程](https://writer.drakeet.com/markdown)，也可以在本教程中阅览[纯纯写作 Markdown 使用手册](#纯纯写作-Markdown-使用手册)。
+Interested in Markdown? Read about the brief introduction written by the developers: [Simple Markdown Guide](https://writer.drakeet.com/markdown), or just read the part [Pure Writer Markdown User Guide](#pure-writer-markdown-user-guide) in this manual.
 
 ## The app automatically creates an article / prompts me to "Skip" on startup
 
-此情况一般是正在使用的某个需要辅助权限/无障碍权限的 启动跳过 类软件造成的。要避免出现此情况请关闭相关应用或将纯纯写作设置为跳过白名单。
+Are you using apps that require you to "turn blah blah on in the Accessibility settings"? If so, it's probably caused by them. For example, if you're using apps that "helps you to skip startup ads", which basically all of them require you to turn on something provided by them, whitelist Pure Writer in these apps, or stop using them.
 
-关于辅助权限，其实很危险，而且将严重影响系统性能。建议普通用户尽量避免使用需要无障碍权限的应用（或服务），无障碍服务本质上是为了服务盲人等不方便操作的用户，滥用此功能可能导致手机性能的损耗甚至个人信息的丢失。
+It should be noted that apps that requires to be turned on in the Accessibility settings can collect more information than other apps. Accessibility is designed for people with disabilities, so apps like TalkBack do have a good reason to have access to everything on the screen, to simulate clicks and swipes, and so on, because people with disabilities do rely on these apps to "see" the screen, or to "click" on the phone. For anything else however, by turning them on in the Accessibility settings, you won't know what they are going to collect, thus may cause leak of personal information, and a huge performance loss.
 
-**外链：**[Android 无障碍服务导致的整机卡顿案例分析](https://www.androidperformance.com/2019/01/21/android-performance-case-jank-accessbility/)
+**See also**: [Case study of phone performance loss caused by Android accessibility service (Chinese)](https://www.androidperformance.com/2019/01/21/android-performance-case-jank-accessbility/)
 
-**增补：** 纯纯写作在版本 14.9.5 更新中已禁止 启动跳过 类软件点击创建新文章。
+**Update**: After v14.9.5, Pure Writer now refuses to create an article if the action is caused by these skip startup apps.
 
 ## Is there a limit to the number of devices that can log into a Pure Writer account at the same time?
 
-目前一个纯纯写作账号最多只能同时在 3 个设备上登录，如果在第 4 个设备上登录，则之前最早登录的设备会被退出登录。
+Yes, with a limit of 3 devices. Log in on a 4th device will cause the 1st device to be logged out.
 
 ## Pure Writer Pro is lost but I have paid for it on Google Play
 
-这是系统中谷歌账户的缓存过期失效了，请重新确保你的系统中登录了已付费的谷歌账号。
+This is caused by a cache expiration of the Google account on your system. Please make sure you are logged into the Google account that has paid Pure Writer Pro on your device.
 
-付费状态的缓存可能会定期失效，必须保持登录谷歌账号才能一直保持激活状态，以避免有人恶意借用账号或刷退款。
+The cache may be expired from time to time, and you should keep logged in. This is to prevent sharing accounts, or cases like if a user requests a refund, the app still consider them as "having paid for Pro".
 
-当遇到失去谷歌激活时**最有效直接的方法**是：退出所有谷歌账号，只登录已付费纯纯写作的谷歌账号，然后打开纯纯写作，以便准确识别是否付费，并且产生新的缓存。
+**Solution**: Log out your Google account, then log into the Google account that has paid Pure Writer Pro, then open Pure Writer. This generates a new cache, making sure that Pure Writer Pro is activated.
 
 ## Cannot use Enter to insert line breaks on Chromebooks or Android x86 devices
 
-这一般是系统的问题，许多系统修改了换行的键位，请尝试使用 Ctrl+Enter 或者 Shift+Enter 换行，许多系统采用此键位作为换行的热键。
+Some of the Android x86 OSes, or modified ChromeOS-es, may change the way you input a line break. Try Ctrl+Enter or Shift+Enter instead (those two are the most common).
 
-如果不能成功建议先在网络上查找一下你所使用系统的换行方式。
+Search the OS and its way to insert line break on the Web if this is not solved.
 
 ## Cannot customize some of the features in the app
 
-如果什么都开放给用户自定义，只会使得软件设置页面变得密密麻麻，像飞机仪表盘一样，令人无所适从，心生恐惧，同时也会使得更关键的设置项可达性下降。好的用户体验应该是帮用户考虑好、设计好，开箱即用。另外，如果什么都允许修改，则很多用户会把纯纯写作改得很难看、变成杀马特风格，这是开发者与大多数用户所不愿意见到的。
+You can search in the settings menu first, in case that it's just that you missed it on the first sight.
+
+However, if we really didn't provide an option for it, then it means that you *shouldn't* change it. It may sound a bit appealing if you get a really detailed settings list, just like an airplane dashboard that can control everything, but if you consider it twice, then providing more options, will only make it more confusing and intimidating, and make settings that are really important to users more inaccessible. The app is designed to be ready to use right out of the box anyway, that is, the default setting should already fit your need. Moreover, providing a more consistent experience to users helps troubleshooting when something goes wrong.
+
+You can leave your comment or send an email to the developer, if you think making [insert feature name] more customizable is better.
 
 ## Is there an iOS version of Pure Writer?
 
-**没有。**
+**Nope.**
 
-纯纯写作是由 Drakeet 一个人独立开发的，目前的目标是不断把 Android 端做到极致。纯纯写作现在没有 iOS 版的计划，因为优秀的编辑器应该是最难做的产品，若要将纯纯写作复刻到 iOS 上工作量巨大而且难点众多，你会发现许多优秀的 iOS 编辑器同样没有 Android 版，这不是没有原因的，因为复刻的工作量实在太大了，而且纯纯写作目前还比较小众，并不值得去开发 iOS 版，十分抱歉。
+Pure Writer is developed by Drakeet alone, and the goal is to keep making the app the best plain text editor of Android devices. You may have heard of some softwares that are exclusive on [insert platform name], right? Why exclusive? The reality is, making a product cross platforms requires much, much more work, and it's hard to make it perfect on other platforms. There are many editor apps exclusive on iOS as well, and just like Pure Writer, they don't plan to make them on Android for the same, or a similar reason. At the moment, it just doesn't worth the effort.
 
 ## Is there a risk of articles being leaked by using Pure Writer?
 
-**纯纯写作不会窃取用户的文章。**
+**The app itself will not leak any content you write.**
 
-窃取用户的文章对纯纯写作并没有什么实际用处，是毫不值得且败坏声誉的行为。
+Leaking users' articles is of no practical use to Pure Writer and is an unworthy and discreditable act.
 
-纯纯写作并没有对用户的备份包做特别的保护和加密，因为这样会严重影响打开与编辑文章的速度，占用手机的性能；纯纯写作的文章备份会且仅会保存在至多两个地方——本机的公用备份文件夹（其中手动备份与自动备份的位置不同）与用户自己设定的云盘中对应的文件夹（如果没有设置云备份则不会在任何云端保存，但文章在换机、遗失、损坏的时候可能会丢失），除此之外不会另作他用。因此在一定程度上对备份包的加密是无意义的，如果有人想要窃取你的文章，并且能从你的手机本机/云盘供应商那里获取到你的备份包，那么对于此人来说加密也是形同虚设的。
+The backup files are not encrypted however, as this would seriously affect the speed of opening and editing articles and take up the phone's performance, and that if anyone else has access to your Cloud Backup, or device itself (knows your PIN, password and so on), then the encryption is simply of no use anyway. Backups are stored in at most two places: your backup folder on your local device (auto backup and manual backup don't share the exact same folder btw), and your cloud drives connected to in Cloud Backup (without using Cloud Backup, your content may lost when your device is replaced, lost or damaged). Make sure those two places are safe and you are good to go.
 
-注意：纯纯写作不能保证纯纯写作破解版中文章的安全，请使用正版纯纯写作，纯纯写作的免费版是完全足够普通用户正常使用的。
+Note: We cannot guarantee the safety of articles in cracked versions of Pure Writer. Do not use cracked versions. The free version is perfectly adequate for normal use anyway.
 
 # Pure Writer Backup & Sync FAQ
 
