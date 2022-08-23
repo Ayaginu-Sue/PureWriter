@@ -41,7 +41,7 @@ Please be sure to make use of in-page search. For desktop devices use Ctrl+F, an
   - [Turn on Read-only Mode](#turn-on-read-only-mode)
   - [Turn off Read-only Mode](#turn-off-read-only-mode)
   - [Insert a new article at different positions](#insert-a-new-article-at-different-positions)
-  - [Options for the few people](#关于少数派选项)
+  - [Options for the few people](#options-for-the-few-people)
   - [The interface gets abnormally color inverted](#the-interface-gets-abnormally-color-inverted)
   - ["This is a Pro feature" pop-ups](#this-is-a-pro-feature-pop-ups)
   - [Is there a huge feature loss without Pure Writer Pro?](#is-there-a-huge-feature-loss-without-pure-writer-pro)
