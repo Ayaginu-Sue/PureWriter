@@ -865,7 +865,7 @@ In Markdown, use ` ```|``` ` for inserting several lines of code, and use `` `|`
 
 We support syntax highlighting in code blocks, just specify the language after ` ``` `.
 
-举例：
+For example:
 
 ````md
 ​```js
