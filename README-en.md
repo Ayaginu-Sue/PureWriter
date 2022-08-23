@@ -112,7 +112,7 @@ Please be sure to make use of in-page search. For desktop devices use Ctrl+F, an
   - [Connection between devices is not stable](#connection-between-devices-is-not-stable)
   - [Auto-connect doesn't work](#auto-connect-doesnt-work)
   - [Ghosting effect of text in Pure Writer Desktop](#ghosting-effect-of-text-in-pure-writer-desktop)
-- [Easter eggs](#eastereggs)
+- [Easter eggs](#easter-eggs)
   - [Easter eggs in Pure Writer](#easter-eggs-in-pure-writer)
 
 # Pure Writer Q&A
