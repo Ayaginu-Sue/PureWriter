@@ -619,7 +619,7 @@ In theory, any cloud drive providers that supports WebDAV are supported. You can
 
 ## Cannot turn off automatic backup
 
-Local automatic backups cannot be turned off, otherwise Pure Writer will not be able to keep your articles safe. The app will not eat up all your storage though, as it only keeps the latest 25 automatic backup files. Any automatic backup files older than those are automatically cleaned. The backups you make by manually clicking "Back up to local storage now" in Pure Writer are not included however; they will be stored in your phone permanently unless you delete them yourself.
+Local automatic backups cannot be turned off, otherwise Pure Writer will not be able to keep your articles safe. The app will not eat up all your storage though, as it only keeps the latest 25 automatic backup files. Any automatic backup files older than those are automatically cleaned. The backups you make by manually clicking "Back up to local storage now" in Pure Writer are not included however; they will be stored in your device permanently unless you delete them yourself.
 
 # 纯纯写作 Markdown 使用指南
 
