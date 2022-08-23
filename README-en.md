@@ -845,7 +845,7 @@ HTML tags again, in this case `<font color="|">|</font>`. Format is `<font color
 
 For exmaple: `<font color="black">These are black!</font>`, `<font color="#000000">These are black too.</font>`.
 
-You **cannot** text color tag and text alignment tag at the same time. Text color **may not** be changed in this way when you use it in places like tables. **Use it with caution**.
+You **cannot** use text color tag and text alignment tag at the same time. Text color **may not** be changed in this way when you use it in places like tables. **Use it with caution**.
 
 ### Escape characters
 
