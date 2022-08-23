@@ -738,7 +738,7 @@ Currently you cannot open a footnote as a pop-up, unlike other websites or softw
 
 Again, you'll have to use HTML tags.
 
-Superscript: `<sup>|</sup>`; and Subscript: `<sub>|</sub>`。
+Superscript: `<sup>|</sup>`; and Subscript: `<sub>|</sub>`.
 
 For example: `x<sup>2</sup>+x+1` and `C<sub>2</sub>H<sub>5</sub>OH`.
 
@@ -851,7 +851,7 @@ You **cannot** text color tag and text alignment tag at the same time. Text colo
 
 Let's say, you want to insert an asterisk at the beginning of the line, but not want the line to become an unordered list, you add a backslash `\` before the asterisk. Markdown uses `\` for *escaping* charcters. That is, the symbols used by some syntax become themselves when rendering.
 
-For example, `\*Italic\*` in Markdown will be rendered as `*Italic*`。
+For example, `\*Italic\*` in Markdown will be rendered as `*Italic*`.
 
 ### Other HTML tags and syntax
 
