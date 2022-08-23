@@ -748,7 +748,7 @@ Again, HTML tags and attributes, this case `<p align="">|</p>`. In Markdown Pane
 
 For example: `<p align="[insert alignment you want]">Text</p>`.
 
-**Do not use**`<center>|</center>` tag.
+**Do not use** `<center>|</center>` tag.
 
 ### Insert images
 
