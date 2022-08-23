@@ -103,7 +103,7 @@ Please be sure to make use of in-page search. For desktop devices use Ctrl+F, an
 - [Pure Writer Markdown FAQ](#pure-writer-markdown-faq)
   - [About Markdown standards in this app](#about-markdown-standards-in-this-app)
   - [Some Markdown syntax are not rendered in the app](#some-markdown-syntax-are-not-rendered-in-the-app)
-  - [Why &gt;center&lt; tag isn't supported?](#why-center-tag-isnt-supported)
+  - [Why &lt;center&gt; tag isn't supported?](#why-center-tag-isnt-supported)
 - [Pure Writer Desktop Alpha FAQ](#pure-writer-desktop-alpha-faq)
   - [Downloading Pure Writer Desktop](#downloading-pure-writer-desktop)
   - [Connect to Desktop](#connect-to-desktop)
