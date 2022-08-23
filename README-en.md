@@ -636,7 +636,7 @@ The app also provides Markdown Panel, click the `M↓` icon on shortcut bar to o
 
 4. Markdown has variants. Pure Writer follows and implements the standard of CommonMark. Thus syntax in some variants (like `==highlight text==`) **are not supported**.
 
-5. Syntax like title, list, quote, table, checkbox, horizontal rule are not meant to be used **inline**, that is, you should always use them **at the beginning of the line** for them to be correctly rendered.
+5. Syntax like heading, list, quote, table, checkbox, horizontal rule are not meant to be used **inline**, that is, you should always use them **at the beginning of the line** for them to be correctly rendered.
 
 6. Pay attention to the cursor's position of a text shortcut. Some of the shortcut entries provided by Pure Writer support to surround the syntax around (before and after) the selected text. Wanna surround the text with your own text shortcut? Put the cursor in the place you want the actual text to be inserted in the content of the Shortcut content field.
 
