@@ -590,7 +590,7 @@ You can manually "merge backup" when restoring a backup. If you want to sync con
 
 - Only using Cloud Backup
 
-  When switching devices, restore backup every time before you use the app. Use "Merge" is preferred.
+  When switching devices, restore backup every time before you use the app. Using "Merge" is preferred.
   
   If you are using multiple devices, using "Merge" can merge content from all these devices. Still, using one device as your main device is preferred.
   
