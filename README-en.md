@@ -849,7 +849,7 @@ You **cannot** use text color tag and text alignment tag at the same time. Text 
 
 ### Escape characters
 
-Let's say, you want to insert an asterisk at the beginning of the line, but not want the line to become an unordered list, you add a backslash `\` before the asterisk. Markdown uses `\` for *escaping* charcters. That is, the symbols used by some syntax become themselves when rendering.
+Let's say, you want to insert an asterisk at the beginning of the line, but do not want the line to become an unordered list, you add a backslash `\` before the asterisk. Markdown uses `\` for *escaping* charcters. That is, the symbols used by some syntax become themselves when rendering.
 
 For example, `\*Italic\*` in Markdown will be rendered as `*Italic*`.
 
