@@ -65,25 +65,18 @@ Please be sure to make use of in-page search. For desktop devices use Ctrl+F, an
   - [Is there an iOS version of Pure Writer?](#is-there-an-ios-version-of-pure-writer)
   - [Is there a risk of articles being leaked by using Pure Writer?](#is-there-a-risk-of-articles-being-leaked-by-using-pure-writer)
 - [Pure Writer Backup & Sync FAQ](#pure-writer-backup-sync-faq)
-  - [关于云备份](#关于云备份)
-  - [为什么坚果云的 WebDAV 显示不能登录？](#为什么坚果云的-webdav-显示不能登录)
-  - [如何配置云备份？](#如何配置云备份)
-  - [如何在新设备中恢复旧设备中的文章？](#如何在新设备中恢复旧设备中的文章)
-  - [为什么坚果云的 WebDAV 显示不能登录？](#为什么坚果云的-webdav-显示不能登录-1)
-  - [错误提示：您的 WebDAV 配置不完整或不正确](#错误提示您的-webdav-配置不完整或不正确)
-  - [错误提示：帐号和密码错误](#错误提示帐号和密码错误)
-  - [错误提示：Error: Error contacting (403)](#错误提示error-error-contacting-403)
-  - [坚果云提示 503 错误](#坚果云提示-503-错误)
-  - [新设备恢复备份后为什么还是初始文章？](#新设备恢复备份后为什么还是初始文章)
-  - [纯纯写作支持自动同步吗？](#纯纯写作支持自动同步吗)
-  - [纯纯写作为什么没有全自动同步？](#纯纯写作为什么没有全自动同步)
-  - [多设备使用时备份中的内容会自动合并吗？](#多设备使用时备份中的内容会自动合并吗)
-  - [在多个设备上使用时，应该如何保证正在编辑的版本为最新？](#在多个设备上使用时应该如何保证正在编辑的版本为最新)
-  - [备份包很大使坚果云流量迅速用完怎么办？](#备份包很大使坚果云流量迅速用完怎么办)
-  - [在 Google Drive 找不到备份文件？](#在-google-drive-找不到备份文件)
-  - [纯纯写作可以使用百度云/阿里云备份吗？](#纯纯写作可以使用百度云阿里云备份吗)
-  - [关于使用其他云盘备份的统一回复](#关于使用其他云盘备份的统一回复)
-  - [为什么不能关闭自动备份？](#为什么不能关闭自动备份)
+  - [About Cloud Backup](#about-cloud-backup)
+  - [Cloud Backup Configuration](#cloud-backup-configuration)
+  - [Restore articles from old device to new device](#restore-articles-from-old-device-to-new-device)
+  - [Error: Your WebDAV configuration is incomplete or incorrect.](#error-your-webdav-configuration-is-incomplete-or-incorrect)
+  - [Only initial articles are present after restoring a backup on new device](#only-initial-articles-are-present-after-restoring-a-backup-on-new-device)
+  - [Does Pure Writer support automatic sync?](#does-pure-writer-support-automatic-sync)
+  - [Why there isn't a "fully automatic" Cloud sync mode?](#why-there-isnt-a-fully-automatic-cloud-sync-mode)
+  - [Is backup content automatically merged when using multiple devices?](#is-backup-content-automatically-merged-when-using-multiple-devices)
+  - [How can I ensure that the article being edited is up-to-date when using Cloud sync across multiple devices?](#how-can-i-ensure-that-the-article-being-edited-is-up-to-date-when-using-cloud-sync-across-multiple-devices)
+  - [Cannot find backup files in Google Drive](#cannot-find-backup-files-in-google-drive)
+  - [Can I use [insert cloud drive provider name] for Cloud Backup?](#can-i-use-insert-cloud-drive-provider-name-for-cloud-backup)
+  - [Cannot turn off automatic backup](#cannot-turn-off-automatic-backup)
 - [纯纯写作 Markdown 使用指南](#pure-writer-markdown-user-guide)
   - [何谓 Markdown？](#何谓-markdown)
     - [注意事项](#注意事项)
@@ -536,153 +529,97 @@ Note: We cannot guarantee the safety of articles in cracked versions of Pure Wri
 
 # Pure Writer Backup & Sync FAQ
 
-## 关于云备份
+## About Cloud Backup
 
-纯纯写作支持云备份，它非常简单，一劳永逸，万无一失。云备份非常重要，因为即使纯纯写作已经提供了多重防范与保护，却仍然有人因为不愿意进行云备份而在手机丢失或刷机时失去全部的文章。没有人能够保证你的手机不会损坏或丢失，而一旦手机损坏或丢失，你的文章备份将不复存在，追悔莫及。
+Pure Writer supports Cloud Backup. That is, the app can make use of cloud drives and send backup files to them, and it's simple to set up, once and for all! Despite that we've provided multiple precautions and protection mechanics, without Cloud Backup, your content may still be lost when your device is lost or damaged or factory reset. No one can guarantee that your device will never be damaged or lost, and when bad things happen, without Cloud Backup, your content will be LOST FOREVER.
 
-纯纯写作尊重并保护用户的隐私，因此服务端不会储存用户的任何隐私信息，用户的文章并不会存储在用户掌控之外的位置。
+The app respects and protects the privacy of its users, so our server does not store any private information about the user, and the user's articles are not stored in any locations that aren't set by the user.
 
-WebDAV 云备份相当简单，你可以访问[《纯纯写作-自动备份与云备份教程》](https://writer.drakeet.com/backups)来了解纯纯写作的自动备份和云备份功能，并获得注册坚果云的教程。
+Cloud Backup, as said above, is quite easy. you can visit ["Pure Writer - Automatic Backup and Cloud Backup Tutorial" (Chinese)](https://writer.drakeet.com/backups) to learn about Pure Writer's automatic backup and Cloud Backup features.
 
-云备份账号与纯纯写作的账号不是绑定的，纯纯写作的账号仅与激活状态绑定。恢复备份即可恢复纯纯写作的激活状态，但登录纯纯写作账号无法恢复文章备份。
+If you do not set up Cloud Backup (for whatever reason, maybe no Internet connection?), you should manually save local backups, frequently, to a location that is still safe when bad things happen.
 
-如果用户不设置云备份，则应手动将本地备份保存在可以信任的位置，以便不时之需。
+## Cloud Backup Configuration
 
-## 为什么坚果云的 WebDAV 显示不能登录？
+Open the app's settings, then click "Backup & Cloud sync".
 
-如果登入坚果云的 WebDAV 时显示【您的 WebDAV 设置不完整或不正确】及【Error Connect】错误提示，这是因为使用了坚果云的密码为 WebDAV 密码，现在坚果云已经不支持直接使用坚果云账号密码作为 WebDAV 密码，所以必须要在坚果云中创建「应用密码」，使用应用密码才能连通 WebDAV。
+To learn more about backup configuration, visit [Automatic Backup and Cloud Backup Tutorial (Chinese)](https://writer.drakeet.com/backups).
 
-**注意**：多次重复设定密码为账号密码将可能使坚果云账号被封，请点击坚果云邮件提供的链接解封。
+## Restore articles from old device to new device
 
-出现此问题的用户请按照云备份教学为纯纯写作配置第三方应用密码：[**《纯纯写作自动备份与云备份教学》**](https://writer.drakeet.com/backups)
+There are two ways: Cloud Backup, and local backup files.
 
-## 如何配置云备份？
-在纯纯写作的设置页面内打开【备份、云备份、云同步】页面。
-想了解更多或了解关于坚果云的备份配置可以访问[云备份与自动备份教程](https://writer.drakeet.com/backups)
-
-## 如何在新设备中恢复旧设备中的文章？
-
-当切换设备后，可以使用两种方式恢复你的备份：通过云备份恢复或通过本地备份恢复。
-
-- 通过云备份恢复
+- Cloud Backup
   
-  在确保新设备的【备份、云备份、云同步】页面中已配置完成云备份后，点击【恢复备份】（此选项亦可以在应用主页右上角云图标的弹出菜单中找到），在弹出页面中根据书籍、文章数量，备份时间，备份机型来选择想要恢复的备份。一般选择来自旧设备的最新备份并进行覆盖备份恢复即可。
+  Set up Cloud Backup on the new device (be sure the configuration is the same), then click "Restore Backup". Select the backup that is correct (determine it by how many books and articles there are, also backup time, device name). Normally, just choose the latest backup from the old device, then select "OVERWRITE".
 
-- 通过本地备份恢复
+- Local backup files
+
+  If your old device is still usable, click "Back up to local storage now" in "Backup & Cloud sync". Go to the backup folder (exact path is shown on that page), find the .pwb file, then send it to the new device. Open the file with Pure Writer, and you are good to go.
   
-  没有进行云备份，并拒绝纯纯写作云备份提醒的用户，请经常手动保存本地备份至可信任的位置。
-
-  若旧设备仍可使用，可以在旧设备的【备份、云备份、云同步】页面点击【立即备份到本机储存空间】以进行一次手动备份，在对应的储存目录中找到生成的 .pwb 档，将其发送到新设备中，并通过纯纯写作打开，即可恢复本地备份。
+  If your old device is not usable, but fortunately manually saved local backups to somewhere that is accessible, send the latest backup file to the new device. You can send it to the backup folder set on the new device, then click "Restore Backup", or just open the backup file with Pure Writer.
   
-  若旧设备已经无法使用且未使用云备份的用户，在更换设备后，可以将手动保存的最新备份放置于新设备纯纯写作备份文件夹内，然后从纯纯写作中手动恢复备份；也可以将备份包放在手机上后使用纯纯写作直接打开备份包。
+  If your old device is not usable, and unfortunately, no local backups are saved, then there is **NO CHANCE to restore your articles**.
+
+## Error: Your WebDAV configuration is incomplete or incorrect.
+
+- Be sure that your account and password is correct. Maybe you missed some (part) of them, or maybe there are misspellings.
+- Be sure that there are no extra spaces or line breaks. This may happen when you copy & paste your settings from elsewhere. Try manually input the configuration, and check twice.
+- If there isn't anything wrong on your side, contact with your WebDAV provider.
+
+## Only initial articles are present after restoring a backup on new device
+
+You should choose the backup file that is **from the old device and correct in file size**. Choosing the backup generated by the new device won't do anything.
+
+## Does Pure Writer support automatic sync?
+
+There are two modes of Cloud sync: semi-automatic sync and manual sync.
+
+When syncing is enabled, the article content will be automatically merged and updated when syncing between different devices. Please read "About Cloud Sync" in the cloud icon on the top bar of the app for details on sync timing, precautions, etc.
+
+## Why there isn't a "fully automatic" Cloud sync mode?
+
+Well, due to Internet connections and other factors, Cloud sync will meet many problems, like conflicts, failures, ambiguous overwrite, thus we cannot make it "fully automatic". It's not even an easy job to handle conflicts on desktop devices (for example, `git`), so, on mobile devices? Nah.
+
+That being said, semi-automatic mode basically fits users' need. Just be sure to read "About Cloud Sync", carefully.
+
+## Is backup content automatically merged when using multiple devices?
+
+You can manually "merge backup" when restoring a backup. If you want to sync content between multiple devices without restoring backups all the time, enable Cloud sync in "Backup & Cloud sync".
+
+**Please read "About Cloud Sync" carefully before enabling Cloud sync. Do not enable it if you don't understand the precaution.**
+
+## How can I ensure that the article being edited is up-to-date when using Cloud sync across multiple devices?
+
+- Only using Cloud Backup
+
+  When switching devices, restore backup every time before you use the app. Use "Merge" is preferred.
   
-  如果没有使用云备份，旧设备无法使用，且没有自行保存本地备份，将**无法恢复文章**。
-
-## 为什么坚果云的 WebDAV 显示不能登录？
-
-如果登入坚果云的 WebDAV 时显示【您的 WebDAV 设置不完整或不正确】及【Error Connect】错误提示，这是因为使用了坚果云的密码为 WebDAV 密码，现在坚果云已经不支持直接使用坚果云账号密码作为 WebDAV 密码，所以必须要在坚果云中创建「应用密码」，使用应用密码才能连通 WebDAV。
-
-**注意**：多次重复设定密码为账号密码将可能使坚果云账号被封，请点击坚果云邮件提供的链接解封。
-
-出现此问题的用户请按照云备份教学为纯纯写作配置第三方应用密码：[《纯纯写作自动备份与云备份教学》](https://writer.drakeet.com/backups)
-
-## 错误提示：您的 WebDAV 配置不完整或不正确
-
-请检查你的 WebDAV 配置中是否少输入或错输入了某些部分。
-
-## 错误提示：帐号和密码错误
-
-- 请检查你的账号或密码中是否有少输入或错输入了某些部分。
-- 请检查在输入 WebDAV 帐号或密码时是否有多余的空格或换行，在复制粘贴时很容易出现这种问题，请尝试删除已经输入的配置内容重新手动输入。
-- 若检查无问题，可以去查看 WebDAV 帐号是否被封停。
-
-## 错误提示：Error: Error contacting (403)
-
-出现 403 forbidden 的原因大多数是坚果云的流量耗尽了，除此之外可能的原因有且仅有账号密码错误和账号被坚果云锁定，请在确认账号密码正确后自行登录坚果云查找原因。
-
-## 坚果云提示 503 错误
-
-该错误可以参考坚果云官方的相关文档 [WebDAV 常见问题答疑](https://content.jianguoyun.com/1112.html)。
-
-> 此种情况是由于短时间内请求了太多次同步导致的，关闭同步后六小时再重新启用同步即可。\
-> 访问频率限制：由于 WebDAV 协议比较占用系统资源，免费版用户限制访问频率为每 30 分钟不超过 600 次请求。付费用户限制访问频率为每 30 分钟不超过 1500 次请求。
-
-## 新设备恢复备份后为什么还是初始文章？
-
-请注意选择**来自旧设备的时间和体积正确**的备份，不要选择你当前新安装而触发生成的空备份。
-
-## 纯纯写作支持自动同步吗？
-
-纯纯写作不支持全自动同步，但支持半自动同步与手动同步。
-
-当开启同步功能后，在不同的设备之间同步时会自动合并更新文章内容。关于同步时机、注意事项等内容请在应用内右上角云图标中阅读《关于云同步》。
-
-## 纯纯写作为什么没有全自动同步？
-
-完全自动化的云同步必然要伴随着同步冲突、同步失败、覆盖丢失等问题，这基本上是无解的，特别是要在手机上处理冲突……想想最经得起考验的 git，都需要很多程序员参手和繁琐解决各种冲突，因此完全自动化的云同步可以说几乎不可能，除非各个端能够保持高速实时连接，瞬间同步……
-
-## 多设备使用时备份中的内容会自动合并吗？
-
-纯纯写作支持手动「合并备份」，如果想要纯纯写作自动合并云端的变化，请在【备份、云备份、云同步】页面中开启云同步功能。
-
-**云同步功能请在确认已经详细阅读并同意《关于云同步》之后使用。**
-
-## 在多个设备上使用时，应该如何保证正在编辑的版本为最新？
-
-- 仅使用云备份时
-
-  在每次切换设备时，都进行一次恢复云备份的操作。在点击恢复备份时，比较推荐使用合并备份。
+  If you are using multiple devices, using "Merge" can merge content from all these devices. Still, using one device as your main device is preferred.
   
-  如果您在多个设备上使用纯纯写作，可以通过合并备份来比较方便地相互合并内容，不过建议还是以一个设备为主。
+  Since only a limited number of files are remained in the cloud drive folder, when one device make multiple cloud backups too often, there is a chance that all backups from other devices will be automatically cleaned.
+
+- Using Cloud sync
   
-  由于云备份的文件在云端文件夹中保留的数量有限，因此当一个设备连续多次进行云备份时（当多应用协同编辑文档时，很容易出现这种情况），另一台设备的云备份有可能会被自动清理掉。
+  Please read "About Cloud Sync" carefully before enabling Cloud sync.
 
-- 使用云同步时
-  
-  使用云同步前需注意详细阅读并理解《关于云同步》。
+  There are two modes, semi-automatic sync and manual sync, and articles will sync across devices according to the mode you choose. When using "Manual", click the sync button at the bottom of the editor to sync the article across devices. When using "Semi-automatic", when the article is changed and the on-screen keyboard is collapsed, the sync will be performed automatically, with an interval of at least 6 seconds between syncs.
 
-  根据手动同步和半自动同步选择的不同，文章将在不同设备间进行云同步。手动同步需要手动点击位于编辑器底部的同步按钮以进行同步；半自动同步则会在文字有变更且收起键盘时自动进行同步，两次同步的间隔至少为 6 秒。
+## Cannot find backup files in Google Drive
 
-## 备份包很大使坚果云流量迅速用完怎么办？
+Google Drive stores backup files in "Application Data" folder, which is always hidden from users.
 
-- 可以进入废纸篓彻底删除之前删除的文章，由于暂时没有全选与清空废纸篓功能，此操作需要手动进行。
-  
-  **需要注意的是，撤销此操作需要恢复备份。**
+This also means that you **cannot use "Bridge: Upload" and "Bridge: Fetch"** when using Google Drive.
 
-- 网络等条件允许的话，也可以尝试使用其他无流量限制的 WebDAV 服务，如 [Teracloud](https://teracloud.jp/)、[Box](https://www.box.com/)、[Yandex disk](https://disk.yandex.com/)、自行搭建的 WebDAV 等。
-  
-  **其他的 WebDAV 服务经常会受网络限制等情况无法使用或连接，严重时可能造成无法进行云端备份，请仔细考察其限制后慎重选择。**
+## Can I use [insert cloud drive provider name] for Cloud Backup?
 
-- 开通坚果云专业版。
-  并非打广告，有需求的可以考虑开通坚果云会员。
+Pure Writer currently supports Cloud Backup with WebDAV, Dropbox and Google Drive.
 
-- 其它方法有待补充。
+In theory, any cloud drive providers that supports WebDAV are supported. You can choose TeraCloud from Japan, Yandex Disk from Russia, and Box (box.com) from the United States, as they supports WebDAV.
 
-## 在 Google Drive 找不到备份文件？
+## Cannot turn off automatic backup
 
-Google Drive 不支持用户对应用建立的云备份文件进行修改，因此即使应用内显示备份成功，用户仍无法在 Google Drive 上找到对应的文件夹。
-
-由于上述原因，当用户使用 Google Drive 时，将**无法使用云读写**，请根据自己的情况与需求进行选择。
-
-## 纯纯写作可以使用百度云/阿里云备份吗？
-
-**不可以。**
-
-百度云目前已不再公开提供 API 服务，只对部分厂商特别提供，阿里云目前未提供任何公开的 API 供第三方应用接入，使用非公开的 API 可能构成侵权行为，因此纯纯写作无法提供接入百度与阿里的云服务的功能。
-
-## 关于使用其他云盘备份的统一回复
-
-目前纯纯写作支持使用 WebDAV、Dropbox 和 Google Drive 同步。
-
-目前国内可以稳定公开免费使用的支持 WebDAV 的仅有坚果云一家，国外可以选择的有日本的 TeraCloud、俄罗斯的 Yandex Disk 以及美国的 Box 云盘，由于众所周知的原因，这些国外云盘在国内使用的体验只能说见仁见智。如果是要求每次使用都进行备份的用户、需要完全绝不丢失的用户、不能承担丢失部分文章风险的用户、网络条件会经常变化的用户等，还请**谨慎选择**国外云盘。
-
-由于众所周知的原因，中国大陆部分用户使用 OneDrive 云服务的速度并不理想，因此纯纯写作在无法保证不会因此造成文章丢失的情况下，将不会支持使用 OneDrive 备份。
-
-微云、百度网盘、阿里云盘、微盘等国内网盘通常是不开放的网盘，并不提供（或仅对部分厂商提供）第三方应用可使用的 API 接口，并且可能还存在许多其他影响使用的因素（如限速等），因此纯纯写作暂不会接入国内的其他网盘。
-
-## 为什么不能关闭自动备份？
-
-本地自动备份无法关闭，否则纯纯写作将无法保证您的文本安全。但您可以放心，纯纯写作不会无限地备份导致您的手机剩余存储空间不断缩小，它会帮助您自动维持 25 份最新自动备份文件，过旧的备份版本将被删掉。当然，您手动点击纯纯写作的【立即备份】而产生的备份不会纳入在内，它们会永久存储于你的手机之中，除非你自行去把它们删除。
+Local automatic backups cannot be turned off, otherwise Pure Writer will not be able to keep your articles safe. The app will not eat up all your storage though, as it only keeps the latest 25 automatic backup files. Any automatic backup files older than those are automatically cleaned. The backups you make by manually clicking "Back up to local storage now" in Pure Writer are not included however; they will be stored in your phone permanently unless you delete them yourself.
 
 # 纯纯写作 Markdown 使用指南
 
