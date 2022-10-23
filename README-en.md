@@ -167,7 +167,7 @@ In this case, Shortcut content field must follow the format of `${<format>}`.
 
 There is a cheatsheet for the actual time format, but don't worry if you cannot understand, as there are some **examples** after the sheet.
 
-![Cheatsheet](https://github.com/Ayaginu-Sue/PureWriter/blob/main/Image/time_shortcut.jpg)
+![Cheatsheet](https://github.com/Ayaginu-Sue/PureWriter/blob/main/Image/time_shortcut.jpg?raw=true)
 
 Here are some examples:
 
