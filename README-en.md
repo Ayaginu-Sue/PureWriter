@@ -393,9 +393,11 @@ Well, the article can get quite long, and thus custom background images had to b
 
 There are two reasons, most frequent though: Custom font and wrong languages.
 
-- Custom font may not contain the glyph for the indent, or the glyph is wrong, in which cases the indent may not be long enough (indent displayed as two half-width spaces but expected two full-width spaces), or the indent is shown as tofus or dots.
+- Custom font may not contain the glyph for the indent, or the glyph is wrong, in which cases the indent may not be long enough (indent displayed as two half-width spaces or even no space but expected two full-width spaces), or the indent is shown as tofus or dots.
 
   Pure Writer uses two full-width spaces (U+3000) for indentation in Chinese. Some fonts however may set the character's width half as it should be, or even totally change the glyph.
+  
+  When using some of the fonts, the indentation may totally disappear (or let's say the width is 0). In this case, the app may function the same as with Indent off, but you can observe that when the cursor is *visually* at the "beginning" of a line, move the cursor left for once will not result in navigating to the previous paragraph.
 
   **Solution**: Change to another font (or disable custom font) that can display the character U+3000 normally. Or, you can manually fix the problem by editing the font file if you know how to do that.
 
@@ -409,6 +411,7 @@ There are two reasons, most frequent though: Custom font and wrong languages.
 
 - Is Markdown mode on? Turn it off as Markdown doesn't support the indentation provided by the app.
 - If Markdown mode is INDEED OFF, go to settings and be sure the "Indent" option is on.
+- Maybe the indentation IS there, but is invisible due to custom font or other reasons. See "[Something is wrong with Indent](#something-is-wrong-with-indent)" for details and the solution.
 
 ## Cannot save as .txt file, only .md is shown
 
@@ -612,7 +615,7 @@ This also means that you **cannot use "Bridge: Upload" and "Bridge: Fetch"** whe
 
 Pure Writer currently supports Cloud Backup with WebDAV, Dropbox and Google Drive.
 
-In theory, any cloud drive providers that supports WebDAV are supported. You can choose TeraCloud from Japan, Yandex Disk from Russia, and Box (box.com) from the United States, as they supports WebDAV.
+In theory, any cloud drive providers that supports WebDAV are supported. You can choose TeraCloud from Japan and Yandex Disk from Russia, as they supports WebDAV.
 
 ## Cannot turn off automatic backup
 
