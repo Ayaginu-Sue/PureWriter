@@ -8,7 +8,7 @@ Please be sure to make use of in-page search. For desktop devices use Ctrl+F, an
 
 ## Table of Contents<!-- omit in toc -->
 
-- [Pure Writer Q&A](#pure-writer-qa)
+- [Pure Writer Q\&A](#pure-writer-qa)
   - [About different modes of Word Count](#about-different-modes-of-word-count)
   - [About landscape mode](#about-landscape-mode)
   - [Paragraph Spcaing is temporarily disabled](#paragraph-spacing-is temporarily-disabled)
