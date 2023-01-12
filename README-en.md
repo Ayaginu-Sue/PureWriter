@@ -11,6 +11,7 @@ Please be sure to make use of in-page search. For desktop devices use Ctrl+F, an
 - [Pure Writer Q&A](#pure-writer-qa)
   - [About different modes of Word Count](#about-different-modes-of-word-count)
   - [About landscape mode](#about-landscape-mode)
+  - [Paragraph Spcaing is temporarily disabled](#paragraph-spacing-is temporarily-disabled)
   - [Shortcut bar](#shortcut-bar)
     - [About shortcuts](#about-shortcuts)
   - [About cursor's position of text shortcuts](#about-cursors-position-of-text-shortcuts)
@@ -24,6 +25,7 @@ Please be sure to make use of in-page search. For desktop devices use Ctrl+F, an
   - [Opening external documents](#opening-external-documents)
   - [Cannot open / import a document that is too large](#canno-open--import-a-document-that-is-too-large)
   - [Custom font and font size](#custom-font-and-font-size)
+  - [Cursor is actually at the end of a line or paragraph but visually in the middle of the line or paragraph](#cursor-is-actually-at-the-end-of-a-line-or-paragraph-but-visually-in-the-middle-of-the-line-or-paragraph)
   - [Change the transparency of the text](#change-the-transparency-of-the-text)
   - [Adjust the left and right margin of the text](#adjust-the-left-and-right-margin-of-the-text)
   - [Adjust line / paragraph spacing](#adjust-line--paragraph-spacing)
@@ -35,6 +37,7 @@ Please be sure to make use of in-page search. For desktop devices use Ctrl+F, an
   - [Only one line / paragraph of the article can be clearly seen](#only-one-line--paragraph-of-the-article-can-be-clearly-seen)
   - [Is it possible to save the article as .docx or .epub?](#is-it-possible-to-save-the-article-as-docx-or-epub)
   - [Articles exported by this app cannot be displayed correctly in other softwares](#articles-exported-by-this-app-cannot-be-displayed-correctly-in-other-softwares)
+  - [Cannot create folders / folders created before are now disappeared](#cannot-create-folders--folders-created-before-are-now-disappeared)
   - [Clicking outline links in Time Machine only opens Books list](#clicking-outline-links-in-time-machine-only-opens-books-list)
   - [Typewriter Mode](#typewriter-mode)
   - [Read-only Mode](#read-only-mode)
@@ -42,8 +45,10 @@ Please be sure to make use of in-page search. For desktop devices use Ctrl+F, an
   - [Turn off Read-only Mode](#turn-off-read-only-mode)
   - [Insert a new article at different positions](#insert-a-new-article-at-different-positions)
   - [Options for the few people](#options-for-the-few-people)
+  - [Why Options for the few people require Pure Writer Pro?](#why-options-for-the-few-people-require-pure-writer-pro)
   - [The interface gets abnormally color inverted](#the-interface-gets-abnormally-color-inverted)
   - ["This is a Pro feature" pop-ups](#this-is-a-pro-feature-pop-ups)
+  - ["This is a Pro feature" pop-up pops out upon opening the app](#this-is-a-pro-feature-pop-up-pops-out-upon-opening-the-app)
   - [Is there a huge feature loss without Pure Writer Pro?](#is-there-a-huge-feature-loss-without-pure-writer-pro)
   - [How does this app keep my custom wallpapers?](#how-does-this-app-keep-my-custom-wallpapers)
   - [Are wallpapers saved in backups?](#are-wallpapers-saved-in-backups)
@@ -136,6 +141,10 @@ Shortcut keys for shortcut entries: Press and hold the Ctrl or Alt key on the ph
 Cannot find those two settings? Open the settings app on your phone, and find "Display" or "Display and Brightness", or something alike, and then you'll see "Auto-rotate screen" or "Orientation Lock". You can search the keyword if applicable.
 
 When using Android tablets or Android desktops, resizing the window of the app may also enable landscape mode.
+
+# Paragraph Spcaing is temporarily disabled
+
+When the number of characters in the article exceeds the threshold, Paragraph Spacing will be temporarily disabled for a better, smoother writing experience. Manual line breaks will not be deleted, and Paragraph Spacing is not achieved by "adding line breaks". It is possible to change the threshold higher (or fewer if your device is experiencing severe performance loss) in "Options for the few people".
 
 ## Shortcut bar
 
@@ -252,6 +261,14 @@ Android 11 and above: Turn on "Custom font", select "Select font", then choose t
 
 For font size, see other settings. You can adjust title font size and content font size in the settings.
 
+## Cursor is actually at the end of a line or paragraph but visually in the middle of the line or paragraph
+
+It's probably caused by custom font.
+
+If this happens in all articles, it is recommended to change to another font. Your exact font may need an update as well; maybe the problem was or will be solved in previous or in future updates.
+
+In rare cases this may only happen in some or only one article, and you can try to insert an new article and then copy the content to the new article from the affected article. If that doesn't help, it is recommended to change to another font.
+
 ## Change the transparency of the text
 
 Tap "more" icon on the top bar, tap "Spacing & Margins", then adjust "Text color Alpha / transparency (%)".
@@ -306,6 +323,12 @@ Currently we don't support these, sorry. There is a plan for saving articles as 
 
 The app exports files in text encoding of UTF-8, thus it means that other apps you use may not support or fail to recognize the file as UTF-8 text encoding. Change the text encoding to UTF-8 in that app, or use an app that supports UTF-8.
 
+## Cannot create folders / folders created before are now disappeared
+
+Folders are only available when "Sort type" is "Manual Sorting". Chaging sort type to other options (e.g. by Time or by A-Z) will disable folders (meaning that they are hidden and new ones cannot be created). DO NOTE that folders are not *deleted* but *disabled*, which means that changing sort type to "Manual Sorting" again will also enable folders again, and all the folders you have created will be visible again.
+
+To enable folders, click the hamburger menu button, then click "Sort Type" button, then select "Manual Sorting".
+
 ## Clicking outline links in Time Machine only opens Books list
 
 Outlines are no longer there, for you can just create another book as your outline. The Books list pops out to tell you that you can create another book as your outline, and then open that book in Editor 2 to work just as fine as the original outline.
@@ -346,6 +369,14 @@ There are three related options in the bottom-right corner menu `⊕`: Insert a 
 
 "Options for the few people" are some options that developers don't recommend to change but have to provide for user requests. Options there includes Smooth cursor (default on), Align title to center (default on), Shortcut bar (default on), Comma to full stop when entering a newline (default off) and so on.
 
+## Why Options for the few people require Pure Writer Pro?
+
+These options are, in theory, features that shouldn't be provided and are unnecessary or may cause confusion; they are provided because of user requests, which means that we put extra amount of time and effort than what was previously planned, and that they are provided to who requested them. Thus, these options require Pure Writer Pro.
+
+The core features of Pure Writer are free, including "Never lose content", excellent editor design and experience, Cloud Sync and Cloud Backup, and so on.
+
+For normal use, you are not required to pay anything. If you do pay, you pay for "extra functions" that are not necessarily needed in a writing session but may benefit you in many ways. We appreciate it if you really love our app and would like to support us by paying Pure Writer Pro, since it does take money to keep development going.
+
 ## The interface gets abnormally color inverted
 
 This happens in devices that provides a "more powerful dark mode" that forces apps to invert colors, thus causing colors of some parts that are already inverted to be inverted again (thus causing situations like white text on white background). Pure Writer cannot do anything about it if the device doesn't provide a way to stop forcing some of the apps to invert colors.
@@ -364,9 +395,17 @@ Some of these provide trials for unpaid users, at the cost of displaying a pop-u
 
 If purchased, but still experiencing pop-ups, go to "Pure Writer Pro", then check if your Pure Writer account or Google account is logged in. If not, log in again, and open Google Play to make sure that your Google account is logged in.
 
+## "This is a Pro feature" pop-up pops out upon opening the app
+
+You enabled a Pro feature that allows trials.
+
+To get rid of it, you can consider disabling Pro features that you have enabled, or, supporting us by purchasing Pure Writer Pro.
+
 ## Is there a huge feature loss without Pure Writer Pro?
 
-There **ISN'T**. The core features of Pure Writer are free, which includes excellent editor experience and Cloud Backup. Most of the features can be used without paying anything and, there aren't any third party advertisements even when unpaid.
+There **ISN'T**.
+
+The core features of Pure Writer are free, which includes excellent editor experience and Cloud Backup. Most of the features can be used without paying anything and, there aren't any third party advertisements even when unpaid.
 
 Each year, Pure Writer will offer a discount on November 11. You can wait for the discount if you don't feel so hasty to buy a Pro at the current price. There might be some other discounts from time to time, so stay tuned.
 
@@ -384,7 +423,7 @@ Backup includes settings, which indeed includes the URL to the image or RGB valu
 
 **Nope.**
 
-Well, the article can get quite long, and thus custom background images had to be stretched, certainly not what users are expecting. There might be some solutions tho:
+Well, the article can get quite long, and thus custom background images had to be stretched, certainly not what users are expecting. There might be some solutions though, however ones listed below have some flaws:
 
 1. Use some color gradient when the custom background image isn't long enough. However images vary and thus cannot really achieve a universal good result.
 2. Tile the image, just like wallpapers on desktops. Well, again, images vary, and when the image is overly complicated, the final image could be quite large in file size, thus is harder to download and may get compressed on social media.
@@ -552,6 +591,8 @@ There are two ways: Cloud Backup, and local backup files.
 - Cloud Backup
   
   Set up Cloud Backup on the new device (be sure the configuration is the same), then click "Restore Backup". Select the backup that is correct (determine it by how many books and articles there are, also backup time, device name). Normally, just choose the latest backup from the old device, then select "OVERWRITE".
+  
+  If you cannot find "the latest backup from the old device", open "Backup & Cloud sync" on the old device, then click "Back up to cloud storage now" to start a manual cloud backup.
 
 - Local backup files
 
