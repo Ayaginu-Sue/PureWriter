@@ -81,6 +81,7 @@ Please be sure to make use of in-page search. For desktop devices use Ctrl+F, an
   - [How can I ensure that the article being edited is up-to-date when using Cloud sync across multiple devices?](#how-can-i-ensure-that-the-article-being-edited-is-up-to-date-when-using-cloud-sync-across-multiple-devices)
   - [Cannot find backup files in Google Drive](#cannot-find-backup-files-in-google-drive)
   - [Can I use [insert cloud drive provider name] for Cloud Backup?](#can-i-use-insert-cloud-drive-provider-name-for-cloud-backup)
+  - [Can I use two cloud drive providers at the same time without manually switching?](#can-i-use-two-cloud-drive-providers-at-the-same-time-without-manually-switching)
   - [Cannot turn off automatic backup](#cannot-turn-off-automatic-backup)
 - [Pure Writer Markdown User Guide](#pure-writer-markdown-user-guide)
   - [What's Markdown?](#whats-markdown)
@@ -654,9 +655,15 @@ This also means that you **cannot use "Bridge: Upload" and "Bridge: Fetch"** whe
 
 ## Can I use [insert cloud drive provider name] for Cloud Backup?
 
-Pure Writer currently supports Cloud Backup with WebDAV, Dropbox and Google Drive.
+Pure Writer currently supports Cloud Backup with WebDAV, Dropbox, Google Drive, OneDrive and Aliyun Drive (China).
 
 In theory, any cloud drive providers that supports WebDAV are supported. You can choose TeraCloud from Japan and Yandex Disk from Russia, as they supports WebDAV.
+
+## Can I use two cloud drive providers at the same time without manually switching?
+
+**Sadly nope.**
+
+Using two cloud drive providers at the same time would cause confusion. Let's say one of the cloud drive providers is temporarily offline, and then Pure Writer had to switch to another provider at the background, then backup files in two providers are now inconsistent. If the user decides to restore a backup now, and happens to choose the "latest" backup file from the provider that is offline, then they are actually choosing an older backup (older than the other provider), causing "data loss".
 
 ## Cannot turn off automatic backup
 
