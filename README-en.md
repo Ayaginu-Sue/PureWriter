@@ -655,7 +655,7 @@ This also means that you **cannot use "Bridge: Upload" and "Bridge: Fetch"** whe
 
 ## Can I use [insert cloud drive provider name] for Cloud Backup?
 
-Pure Writer currently supports Cloud Backup with WebDAV, Dropbox, Google Drive and Aliyun Drive (China).
+Pure Writer currently supports Cloud Backup with WebDAV, Dropbox, Google Drive, OneDrive and Aliyun Drive (China).
 
 In theory, any cloud drive providers that supports WebDAV are supported. You can choose TeraCloud from Japan and Yandex Disk from Russia, as they supports WebDAV.
 
